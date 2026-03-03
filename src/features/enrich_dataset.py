@@ -3,6 +3,8 @@ import requests
 import time
 import os
 import numpy as np
+import re
+import shutil
 from datetime import datetime
 
 def load_data(base_df_path, raw_dir):
@@ -45,6 +47,12 @@ def merge_clinical_data(base_df, studies, calc_vals, sponsors, conditions):
     collapsed_conditions = conditions.groupby('nct_id')['mesh_term'].apply(lambda x: '|'.join(x.dropna().unique())).reset_index()
     df = df.merge(collapsed_conditions, on='nct_id', how='left')
     
+    # Secondary biologic cleanup (suffixes that missed the first pass)
+    biologic_suffixes = ['ase', 'fusp', 'cept', 'alfa', 'beta', 'gamma']
+    # Filter for names ending with these suffixes or containing them
+    pattern = '|'.join([f"{s}$" for s in biologic_suffixes])
+    df = df[~df['name'].str.contains(pattern, case=False, na=False)]
+    
     return df
 
 def feature_engineering(df):
@@ -86,12 +94,26 @@ def feature_engineering(df):
 def get_pubchem_data(drug_name):
     """
     Retrieve molecular properties from PubChem PUG-REST API.
+    Enhanced with name cleaning and combination handling.
     """
     if pd.isnull(drug_name) or drug_name == '':
         return None, None, None, None
     
-    # Clean drug name for API (e.g., handle common salt forms or prefixes)
+    # Skip placebos
+    if 'placebo' in drug_name.lower():
+        return None, None, None, None
+    
+    # Clean drug name for API
+    # 1. Remove descriptive text
     clean_name = drug_name.split(',')[0].strip()
+    clean_name = re.sub(r'\b(iv|intravenous|oral|tablets|capsules|active drug|matching)\b', '', clean_name, flags=re.IGNORECASE).strip()
+    
+    # 2. Handle simple combinations (take the first active if multiple)
+    # e.g., "Drug A + Drug B" -> "Drug A"
+    for separator in ['+', '/', ' and ', ' with ']:
+        if separator in clean_name.lower():
+            clean_name = clean_name.lower().split(separator)[0].strip()
+            break
     
     base_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/{clean_name}/property/IsomericSMILES,ConnectivitySMILES,MolecularWeight,XLogP/JSON"
     
@@ -147,7 +169,22 @@ def enrich_with_pubchem(df):
 def main():
     base_df_path = os.path.join('data', 'processed', 'SVEF_candidates.csv')
     raw_dir = os.path.join('data', 'raw')
-    output_path = os.path.join('data', 'processed', 'SVEF_Enriched_Final.csv')
+    
+    # Define paths
+    processed_dir = os.path.join('data', 'processed')
+    archive_dir = os.path.join(processed_dir, 'archive')
+    main_output_path = os.path.join(processed_dir, 'SVEF_Enriched_Final.csv')
+    
+    if not os.path.exists(archive_dir):
+        os.makedirs(archive_dir)
+
+    # 1. Archive existing final file if it exists
+    if os.path.exists(main_output_path):
+        mtime = os.path.getmtime(main_output_path)
+        timestamp = datetime.fromtimestamp(mtime).strftime('%Y%m%d_%H%M%S')
+        archive_path = os.path.join(archive_dir, f'SVEF_Enriched_{timestamp}.csv')
+        print(f"Archiving existing dataset to: {archive_path}")
+        shutil.move(main_output_path, archive_path)
     
     # Load and Join
     base_df, studies, calc_vals, sponsors, conditions = load_data(base_df_path, raw_dir)
@@ -159,9 +196,9 @@ def main():
     # Cheminformatics
     enriched_df = enrich_with_pubchem(enriched_df)
     
-    # Save
-    enriched_df.to_csv(output_path, index=False)
-    print(f"\nFinal enriched dataset saved to: {output_path}")
+    # Save as the new 'Final'
+    enriched_df.to_csv(main_output_path, index=False)
+    print(f"\nNew enriched dataset saved to: {main_output_path}")
     
     # Summary Report
     print("\n--- Enrichment Summary Report ---")
