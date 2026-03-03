@@ -32,6 +32,13 @@ This document defines and explains each header (feature) within the final enrich
 *   **norm_enrollment:** Min-Max normalized value of the `enrollment` column (0.0 to 1.0).
 *   **norm_duration:** Min-Max normalized value of the `trial_duration_days` column (0.0 to 1.0).
 *   **Safety_Score:** A weighted composite score `(0.5 * norm_enrollment + 0.5 * norm_duration)` representing the depth of human safety exposure.
+*   **Evidence_Confidence:** A weighted scholarly validation score: `(Number of RESULT PMIDs * 1.0) + (Number of BACKGROUND PMIDs * 0.2) + 0.5 bonus if RESULTS exist`.
+
+## Publication Metadata
+*   **results_pmid_list:** Pipe-separated (|) list of PMIDs classified as 'RESULT'.
+*   **background_pmid_list:** Pipe-separated (|) list of PMIDs classified as 'BACKGROUND' or other.
+*   **doi_list:** Pipe-separated (|) list of Digital Object Identifiers (DOIs) extracted from trial citations.
+*   **publication_count:** Total unique PMIDs associated with the trial.
 
 ## PubChem Molecular Descriptors
 *   **pubchem_cid:** The unique Compound ID assigned by PubChem.

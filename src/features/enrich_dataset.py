@@ -27,7 +27,10 @@ def load_data(base_df_path, raw_dir):
     conditions = pd.read_csv(os.path.join(raw_dir, 'browse_conditions.txt'), sep='|', low_memory=False,
                              usecols=['nct_id', 'mesh_term'])
     
-    return base_df, studies, calc_vals, sponsors, conditions
+    references = pd.read_csv(os.path.join(raw_dir, 'study_references.txt'), sep='|', low_memory=False,
+                             usecols=['nct_id', 'pmid', 'reference_type', 'citation'])
+    
+    return base_df, studies, calc_vals, sponsors, conditions, references
 
 def merge_clinical_data(base_df, studies, calc_vals, sponsors, conditions):
     """
@@ -54,6 +57,46 @@ def merge_clinical_data(base_df, studies, calc_vals, sponsors, conditions):
     df = df[~df['name'].str.contains(pattern, case=False, na=False)]
     
     return df
+
+def process_publications(refs):
+    """
+    Extract DOIs, categorize PMIDs, and compute Evidence_Confidence score.
+    """
+    print("Processing publication metadata (PMIDs and DOIs)...")
+    # Clean refs
+    refs['pmid'] = pd.to_numeric(refs['pmid'], errors='coerce')
+    refs['reference_type'] = refs['reference_type'].fillna('background').str.lower()
+    
+    # DOI Extraction from citation
+    doi_pattern = r'doi:\s*([^\s;]+)'
+    refs['doi'] = refs['citation'].str.extract(doi_pattern, flags=re.IGNORECASE, expand=False)
+    
+    # Aggregation per nct_id
+    def aggregate_refs(group):
+        results_pmids = group[group['reference_type'] == 'result']['pmid'].unique()
+        results_pmids = [str(int(p)) for p in results_pmids if pd.notna(p)]
+        
+        bg_pmids = group[group['reference_type'] != 'result']['pmid'].unique()
+        bg_pmids = [str(int(p)) for p in bg_pmids if pd.notna(p)]
+        
+        dois = group['doi'].dropna().unique()
+        
+        # Evidence Confidence Score
+        # Weight 1.0 for results, 0.2 for background, +0.5 bonus if any results
+        score = (len(results_pmids) * 1.0) + (len(bg_pmids) * 0.2)
+        if len(results_pmids) > 0:
+            score += 0.5
+            
+        return pd.Series({
+            'results_pmid_list': '|'.join(results_pmids),
+            'background_pmid_list': '|'.join(bg_pmids),
+            'doi_list': '|'.join(dois),
+            'publication_count': len(set(results_pmids + bg_pmids)),
+            'Evidence_Confidence': round(score, 2)
+        })
+
+    agg_refs = refs.groupby('nct_id').apply(aggregate_refs, include_groups=False).reset_index()
+    return agg_refs
 
 def feature_engineering(df):
     """
@@ -187,11 +230,15 @@ def main():
         shutil.move(main_output_path, archive_path)
     
     # Load and Join
-    base_df, studies, calc_vals, sponsors, conditions = load_data(base_df_path, raw_dir)
+    base_df, studies, calc_vals, sponsors, conditions, references = load_data(base_df_path, raw_dir)
     enriched_df = merge_clinical_data(base_df, studies, calc_vals, sponsors, conditions)
     
     # Feature Engineering
     enriched_df = feature_engineering(enriched_df)
+    
+    # Publication Enrichment
+    pub_data = process_publications(references)
+    enriched_df = enriched_df.merge(pub_data, on='nct_id', how='left')
     
     # Cheminformatics
     enriched_df = enrich_with_pubchem(enriched_df)
@@ -206,6 +253,13 @@ def main():
     print(f"Average Enrollment: {enriched_df['enrollment'].mean():.2f}")
     print(f"SMILES Matches Found: {enriched_df['is_dti_ready'].sum()}")
     print(f"DTI-Ready Coverage: {(enriched_df['is_dti_ready'].sum() / len(enriched_df)) * 100:.2f}%")
+    
+    # Publication Summary
+    has_pubs = enriched_df['publication_count'].fillna(0) > 0
+    has_results = enriched_df['results_pmid_list'].fillna('').str.len() > 0
+    print(f"Candidates with Scholarly Evidence: {has_pubs.sum()} ({(has_pubs.sum()/len(enriched_df))*100:.2f}%)")
+    print(f"Candidates with Result Publications: {has_results.sum()} ({(has_results.sum()/len(enriched_df))*100:.2f}%)")
+    print(f"Average Evidence_Confidence: {enriched_df['Evidence_Confidence'].mean():.2f}")
     
     if 'agency_class' in enriched_df.columns:
         dist = enriched_df['agency_class'].value_counts()
