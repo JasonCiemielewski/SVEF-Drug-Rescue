@@ -150,6 +150,8 @@ def get_pubchem_data(drug_name):
     # 1. Remove descriptive text
     clean_name = drug_name.split(',')[0].strip()
     clean_name = re.sub(r'\b(iv|intravenous|oral|tablets|capsules|active drug|matching)\b', '', clean_name, flags=re.IGNORECASE).strip()
+    # Remove empty or whitespace-only parentheses
+    clean_name = re.sub(r'\(\s*\)', '', clean_name).strip()
     
     # 2. Handle simple combinations (take the first active if multiple)
     # e.g., "Drug A + Drug B" -> "Drug A"
@@ -242,6 +244,10 @@ def main():
     
     # Cheminformatics
     enriched_df = enrich_with_pubchem(enriched_df)
+    
+    # Final Deduplication
+    print("Performing final deduplication...")
+    enriched_df = enriched_df.drop_duplicates(subset=['nct_id', 'name'])
     
     # Save as the new 'Final'
     enriched_df.to_csv(main_output_path, index=False)
