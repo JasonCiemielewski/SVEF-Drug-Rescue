@@ -1,0 +1,7 @@
+.svef/
+__pycache__/
+data/raw/
+data/interim/
+data/processed/*.csv
+*.xlsx
+*.pdf
