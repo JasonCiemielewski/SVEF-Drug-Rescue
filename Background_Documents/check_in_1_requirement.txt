@@ -1,0 +1,6 @@
+Submit preliminary EDA notebook:
+• Dataset loaded
+• Initial cleaning
+• 2–3 visualizations
+• At least one summary statistic
+• Short progress note
