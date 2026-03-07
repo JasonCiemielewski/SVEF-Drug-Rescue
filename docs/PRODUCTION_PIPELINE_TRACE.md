@@ -4,7 +4,15 @@ This document provides a line-by-line accounting of every action, join, rename, 
 
 ---
 
-## Stage 1: Candidate Extraction (`src/data/make_dataset.py`)
+## Top-Level Orchestration (`main.py`)
+The pipeline is entry-pointed through `main.py`, which manages the sequence and dependencies:
+1.  **`--audit`**: Triggers `audit_global_trials`. (Global Denominator Audit)
+2.  **`--refine`**: Triggers `refine_svef_assets`. (SVEF Candidate Identification)
+3.  **`--enrich`**: Triggers `recover_smiles`. (Bioinformatics Enrichment)
+
+---
+
+## Stage 1: Candidate Extraction (`src/audit/audit_engine.py`)
 
 ### 1. Ingestion
 *   **Action:** Loads `studies.txt`, `interventions.txt`, and `id_information.txt`.

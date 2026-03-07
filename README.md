@@ -18,14 +18,34 @@ This pipeline utilizes a **Total Evidence Model**, preserving every drug arm in 
 3.  **Tests:** Verify the logic by running `pytest tests/bioinformatics_audit/`.
 
 ## 4. Pipeline Execution
-1.  **Phase 1: Candidate Extraction**
-    `python src/data/make_dataset.py`
-2.  **Phase 2: Hardened Enrichment**
-    `python src/features/enrich_dataset.py`
-3.  **Phase 3: Visual Reporting & Gold Standard Export**
-    `python src/visualization/analyze_coverage.py`
+The pipeline is managed through `main.py` with modular flags for specific auditing, refinement, and enrichment tasks.
 
-## 5. Project Structure
+### Full Pipeline Run
+```bash
+python main.py --all
+```
+
+### Modular Flags
+- `--audit`: Runs Module 1: Global Denominator Analysis (AACT status auditing).
+- `--refine`: Runs Module 2: Targeted Asset Identification (SVEF candidate extraction).
+- `--enrich`: Runs Module 3: Tiered Chemical Enrichment (PubChem/SMILES recovery).
+
+## 5. Quick Start & QA
+### Micro Dataset (Recommended for First Run)
+If you don't have the full 1GB+ AACT dataset, use the pre-processed micro dataset in `data/demo/` for testing:
+```bash
+python src/data/create_micro_dataset.py  # (Optional: regenerates micro files)
+python main.py --all --demo              # (Coming soon: flag for demo data)
+```
+*Note: Currently, point the pipeline to `data/demo/` by renaming it to `data/raw/` for a quick test.*
+
+### Quality Assurance
+Before a production run, verify the system integrity:
+1.  **Preflight Check:** `python src/features/preflight_test.py` (Validates environment and AACT file structure).
+2.  **Pilot Run:** `python src/features/pilot_run.py` (Tests enrichment logic on a 500-trial sample).
+3.  **Unit Tests:** `pytest tests/bioinformatics_audit/` (Verifies core logic).
+
+## 6. Project Structure
 ```text
 ├── data/
 │   ├── raw/             # AACT source files (.txt)

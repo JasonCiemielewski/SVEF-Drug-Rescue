@@ -8,14 +8,16 @@ This guide explains how to execute the SVEF data pipeline. The architecture is d
 
 ## 2. Execution Steps
 
-### Step 1: Base Candidate Extraction & Auditing
-**Script:** `src/data/make_dataset.py`
+The pipeline is managed via `python main.py`.
+
+### Step 1: Base Candidate Extraction & Auditing (`--audit`)
+**Module:** `src.audit.audit_engine.audit_global_trials`
 - **Action:** Filters ~570k trials for Phase 2/3 halted studies.
 - **NLP Logic:** Identifies scientific vs. strategic reasons for termination.
 - **Output:** `data/interim/SVEF_candidates.csv`.
 
-### Step 2: Total Evidence Enrichment (Hardened)
-**Script:** `src/features/enrich_dataset.py`
+### Step 2: Total Evidence Enrichment (Hardened) (`--refine` & `--enrich`)
+**Module:** `src.audit.svef_refinement.refine_svef_assets` & `src.audit.smiles_recovery.recover_smiles`
 - **Total Evidence Model:** Preserves every drug in the trial. Joins with trial design tables to identify if a drug was `EXPERIMENTAL` or a `PLACEBO`.
 - **Bioinformatics Recovery:**
     - **Tier 1:** Name lookup.
@@ -37,6 +39,7 @@ This guide explains how to execute the SVEF data pipeline. The architecture is d
 
 ## 3. Recommended QA Workflow
 Before running a production-scale job, it is recommended to follow this sequence:
-1.  **Unit Tests:** `pytest tests/bioinformatics_audit/` (Verifies logic).
-2.  **Pilot Run:** `python src/features/pilot_run.py` (Verifies API and AACT joins on a 500-trial sample).
-3.  **Production:** `python src/features/enrich_dataset.py`.
+1.  **Preflight Check:** `python src/features/preflight_test.py` (Validates environment and AACT file structure).
+2.  **Unit Tests:** `pytest tests/bioinformatics_audit/` (Verifies logic).
+3.  **Pilot Run:** `python src/features/pilot_run.py` (Verifies API and AACT joins on a 500-trial sample).
+4.  **Production:** `python main.py --all`.
