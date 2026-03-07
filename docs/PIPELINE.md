@@ -1,52 +1,42 @@
-# Pipeline Automation Guide: SVEF Project (Unified Edition)
+# Pipeline Automation Guide: SVEF Total Evidence Edition
 
-This guide explains how to execute the expanded SVEF data pipeline. The process is designed to be idempotent and provide a complete audit trail of all inclusion/exclusion decisions.
+This guide explains how to execute the SVEF data pipeline. The architecture is designed for high-fidelity chemical recovery and statistical integrity.
 
 ## 1. Prerequisites
-- **Raw Data:** AACT flat files (`studies.txt`, `interventions.txt`, `id_information.txt`) must be in `data/raw/`.
-- **Python:** 3.12+ with all dependencies in `requirements.txt` installed.
+- **AACT Data:** The pipeline requires the standard AACT flat files in `data/raw/`. 
+- **Relational Tables:** Must include `design_groups.txt` and `design_group_interventions.txt` for role mapping.
 
-## 2. Pipeline Execution Steps
+## 2. Execution Steps
 
-### Step 1: Unified Base Candidate Filtration & Auditing
+### Step 1: Base Candidate Extraction & Auditing
 **Script:** `src/data/make_dataset.py`
-- **Action:** 
-    1. Loads ~570k AACT trials.
-    2. Filters for Phase 2/3 Interventional trials with statuses: `TERMINATED`, `SUSPENDED`, `WITHDRAWN`, and `UNKNOWN`.
-    3. **Structural Auditing:** Saves snapshots of the initial filtered pool for each status in `data/interim/audit/`.
-    4. **Text-Mining Logic:** Applies an NLP-based "Efficacy vs. Safety" filter to `why_stopped` text using word boundaries and complex negation rules (e.g., "not for safety or efficacy").
-    5. **Categorization:** Assigns audit statuses like `TERMINATED_EFFICACY_FAILURE`, `SUSPENDED_CLEAN_EXIT`, or `WITHDRAWN_STRATEGIC`.
-    6. **Trial Linking:** Scans `id_information.txt` to identify and link previous or successive clinical studies for the same drug.
-- **Outputs:** 
-    - `data/processed/SVEF_candidates.csv` (~22k trials).
-    - `data/interim/audit/svef_logic_audit.csv` (Decision matrix for all ~41k audited trials).
+- **Action:** Filters ~570k trials for Phase 2/3 halted studies.
+- **NLP Logic:** Identifies scientific vs. strategic reasons for termination.
+- **Output:** `data/interim/SVEF_candidates.csv`.
 
-### Step 2: Feature Enrichment & Chemical Linking
+### Step 2: Total Evidence Enrichment (Hardened)
 **Script:** `src/features/enrich_dataset.py`
-- **Action:** 
-    1. Joins clinical metadata (enrollment, start dates, lead sponsor, MeSH terms).
-    2. Processes publication metadata (PMIDs, DOI extraction).
-    3. Fetches molecular SMILES from the PubChem PUG-REST API.
-    4. Automatically archives previous versions of the enriched dataset to `data/processed/archive/`.
+- **Total Evidence Model:** Preserves every drug in the trial. Joins with trial design tables to identify if a drug was `EXPERIMENTAL` or a `PLACEBO`.
+- **Bioinformatics Recovery:**
+    - **Tier 1:** Name lookup.
+    - **Tier 2:** CAS Registry Number extraction from trial titles.
+    - **Tier 3:** Alias/Synonym lookup.
+- **Hardening Features:**
+    - **Retries:** 3 attempts with exponential backoff for API calls.
+    - **Atomic Writes:** Saves `smiles_cache.csv` to a temporary file before renaming to prevent corruption.
+    - **Type Integrity:** Forced string-casting for all relational join keys.
 - **Output:** `data/processed/SVEF_Enriched_Final.csv`.
 
-### Step 3: Coverage Analysis & Subsetting
+### Step 3: Failure Categorization & Rescue leads
+- **Action:** Assets that fail PubChem are categorized (e.g., `PLACEBO_EQUIVALENT` vs `POSSIBLE_INTERNAL_PROPRIETARY`).
+- **Output:** `data/processed/Possible_Internal_Proprietary_Rescue_Leads.csv`.
+
+### Step 4: Coverage Analysis
 **Script:** `src/visualization/analyze_coverage.py`
-- **Action:** 
-    1. Identifies trials with both successful SMILES retrieval and available publication metadata.
-    2. Generates quality reports (Venn diagrams/Bar charts).
-    3. Exports the final "Gold Standard" subset for ICAN modeling.
-- **Outputs:** 
-    - `data/processed/SVEF_Gold_Standard_Candidates.csv`.
-    - `reports/figures/coverage_venn.png`.
-    - `reports/figures/coverage_stacked_bar.png`.
+- **Action:** Generates PNG reports quantifying the success of the bioinformatics recovery and identifying the "Gold Standard" subset for ICANN.
 
-## 3. Automation Workflow
-To run the entire pipeline in sequence (Windows PowerShell):
-```powershell
-python src/data/make_dataset.py; python src/features/enrich_dataset.py; python src/visualization/analyze_coverage.py
-```
-
-## 4. Troubleshooting & Auditing
-- **Why was a trial excluded?** Open `data/interim/audit/svef_logic_audit.csv` and search for the `nct_id`. Check the `inclusion_trigger` and `exclusion_trigger` columns to see which words were detected.
-- **How were trials linked?** Review the `connected_trials` column in the final processed files.
+## 3. Recommended QA Workflow
+Before running a production-scale job, it is recommended to follow this sequence:
+1.  **Unit Tests:** `pytest tests/bioinformatics_audit/` (Verifies logic).
+2.  **Pilot Run:** `python src/features/pilot_run.py` (Verifies API and AACT joins on a 500-trial sample).
+3.  **Production:** `python src/features/enrich_dataset.py`.

@@ -1,7 +1,33 @@
+# Environments
 .svef/
+.venv/
+env/
+venv/
+
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (Ignore all except demo data)
 data/raw/
 data/interim/
-data/processed/*.csv
+data/processed/
+!data/demo/
+
+# Reports & Docs
+# Keep the directory but ignore generated assets
+docs/*_files/
+docs/*.html
+# Keep figures for now as some are already tracked
+# reports/figures/*.png
+
+# Office/Temp files
 *.xlsx
 *.pdf
+~$*
+script_*.py

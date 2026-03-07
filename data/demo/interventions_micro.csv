@@ -1,0 +1,147 @@
+id,nct_id,intervention_type,name,description
+299874362,NCT02378870,DRUG,Osteodex,"Osteodex 3.0 mg/kg given every two week, maximum 13 times."
+299874363,NCT02378870,DRUG,Placebo,
+299874991,NCT01395342,OTHER,Exercise using stationary bicycle,"Before exercise, blood pressure and heart rate are measured in the sitting position.~Exercise is realized using stationary bicycle (horizontal bench mode) once at week, during 20 minutes under physiotherapist supervision.~The heart rate was maintained at 20% above resting heart rate and up to 140 bpm.~After exercise is performed a leg stretching and a low back stretching. The blood pressure and heart rate are measured in the sitting position."
+299875046,NCT00630994,DRUG,Dacogen,
+299875053,NCT01855321,DRUG,Vitamin D,"The cholecalciferol capsule with respect to size and shape and 2) the intervention group will take 1 oral capsule of cholecalciferol 50,000 IU (Bio-Tech Pharmacal, Fayetteville, AR USA) once weekly for 8 weeks followed by 50,000 IU once monthly for 4 months."
+299875054,NCT01855321,DRUG,Placebo,"The placebo capsule is to be identical to the cholecalciferol capsule with respect to size and shape and 2) the intervention group will take 1 oral capsule of cholecalciferol 50,000 IU (Bio-Tech Pharmacal, Fayetteville, AR USA) once weekly for 8 weeks followed by 50,000 IU once monthly for 4 months."
+299875075,NCT04931147,DRUG,RXC007,"RXC007 will be administered in the form of oral capsules at selected doses starting at 2 mg to 4 of the 6 participants within each cohort in Part A and Part B. For Part A, dosing frequency is one single dose on one occasion and for Part B, dosing frequency is single doses once daily for 14 days. If required, following dose escalation data review, dosing frequency and duration may be modified in Part B.~All participants in Part C (24) will receive active RXC007 in the form of oral capsules as single doses."
+299875076,NCT04931147,DRUG,RXC007 Matching Placebo,"The matching placebo for RXC007 will be administered in the form of oral capsules matched to the number of active RXC007 capsules at each dose level to 2 of the 6 participants within each cohort in Part A and Part B. For Part A, dosing frequency is one placebo dose on one occasion and for Part B, dosing frequency is single placebo doses once daily for 14 days. If required, following dose escalation data review, dosing frequency and duration may be modified in Part B.~There is no placebo intervention for Part C of the study."
+299875098,NCT05205109,DRUG,ATG-037,"Part I : ATG-037 will be administered orally once a day (QD) on D-2, then multiple doses of ATG-037 will be administered orally BID for every day from C1D1. A treatment cycle will be defined as 21 days.~Part II: ATG-037 will be administered orally BID for every day from C1D1."
+299875099,NCT05205109,DRUG,KEYTRUDA ®( Pembrolizumab),"Part I: After 2 cycles of ATG-037 monotherapy, eligible participants will receive ATG-037 combination therapy with Keytruda ®(Pembrolizumab) 200mg/Q3W fixed dose for up to 35 administrations (approximately 2 years).~Part II: Keytruda ®(Pembrolizumab) will be administered from C1."
+299875108,NCT05772546,DRUG,Avatrombopag,"Thrombopoietin receptor agonist, tablet taken orally."
+299875109,NCT05772546,DRUG,Matching Placebo,"Lactose monohydrate, tablet taken orally."
+299875112,NCT04957914,DRUG,Insulin Glargine,Administered SC
+299875113,NCT04957914,DRUG,LY3209590,Administered SC
+299875130,NCT03891732,DIAGNOSTIC_TEST,MRI prostate,plain biparametric MRI prostate
+299875146,NCT05727267,BIOLOGICAL,HEPLISAV B; TherVacB,Administration of the described combinations via the intramuscular route
+299875147,NCT05727267,BIOLOGICAL,TherVacB,Administration of the described combinations via the intramuscular route
+299875148,NCT01169259,DIETARY_SUPPLEMENT,vitamin D3,"Vitamin D3 (cholecalciferol), 2000 IU per day."
+299875149,NCT01169259,DRUG,omega-3 fatty acids (fish oil),"Omacor, one 1-gram capsule per day. Each capsule of Omacor contains 840 milligrams of marine omega-3 fatty acids (465 mg of eicosapentaenoic acid \[EPA\] and 375 mg of docosahexaenoic acid \[DHA\])."
+299875150,NCT01169259,DIETARY_SUPPLEMENT,Vitamin D3 placebo,Vitamin D placebo
+299875151,NCT01169259,DIETARY_SUPPLEMENT,Fish oil placebo,Fish oil placebo
+299875159,NCT05963217,BIOLOGICAL,TBI-2001,"Phase-I portion:~cohort 1: 3×10\^5 cells/kg, cohort 2: 1×10\^6 cells/kg, cohort 3: 3×10\^6 cells/kg). Phase-Ib portion: The dose of Phase-Ib will be determined during the phase I portion."
+299875160,NCT05963217,DRUG,Cyclophosphamide,IV Cyclophosphamide (for 3 days) will be administered as conditioning before cell infusion with TBI-2001.
+299875161,NCT05963217,DRUG,Fludarabine,IV Fludarabine (for 3 days) will be administered as conditioning before cell infusion with TBI-2001.
+299875164,NCT05993299,DRUG,Letetresgene autoleucel,Letetresgene autoleucel will be administered.
+299875165,NCT05993299,DRUG,Cyclophosphamide,Cyclophosphamide will be used as a lymphodepleting chemotherapy.
+299875166,NCT05993299,DRUG,Fludarabine,Fludarabine will be used as a lymphodepleting chemotherapy.
+299875167,NCT05644756,BEHAVIORAL,"IMPACT Methods to Identify and Prioritize Determinants (Challenge I), Challenge and Match strategies to Prioritized Determinants (Challenge II)","IMPACT Center developed two methods for identifying determinants that involved providers, staff, and youth at community mental health centers in site visit 1: Rapid Ethnographic Assessment, Design Probes. Then, practice partners engage in a facilitated group activity to rate the criticality, chronicity, and ubiquity of the list of determinants in Site Visit 2. Finally, practice partners engage in a third site visit where they create Causal Pathway Diagrams that allow them to match strategies to prioritize determinants and create Implementation Plans."
+299875169,NCT06020378,DRUG,Hydroxychloroquine,Hydroxychloroquine was administered during pregnancy
+299875170,NCT04638439,DRUG,P1101 + Nivolumab + Entecavir,"P1101 (Ropeginterferon alfa-2b) 450 µg subcutaneously (SC) Q2W for 6 doses (12 weeks), followed by 0.3 mg/kg Nivolumab for 6 doses (12 weeks), with a follow up of 24 weeks. All patients will also receive Entecavir 0.5 mg QD from Day 1 to Follow-up 24."
+299875176,NCT06839872,DRUG,Pirtobrutinib,Patients will receive pirtobrutinib orally with dosing schedule as prescribed
+299875177,NCT06839872,DRUG,Acalabrutinib,Patients will receive acalabrutinib orally with dosing schedule as prescribed.
+299875179,NCT04663997,DRUG,177Lu-PSMA-617,IA of 7.4GBq (± 10%) IV every 6 weeks; maximum 6 cycles
+299875180,NCT04663997,DRUG,Docetaxel,75mg/m2 IV every 3 weeks maximum 12 cycles
+299875194,NCT04238624,DRUG,Dabrafenib,Participants will receive dabrafenib 150 mg orally twice a day
+299875195,NCT04238624,DRUG,Trametinib,Participants will receive trametinib 2 mg orally once a day
+299875198,NCT06297642,DRUG,TQB2928 injection,Anti-CD47 monoclonal antibody
+299875199,NCT06297642,DRUG,Penpulimab,Humanized Monoclonal Antibody to Programmed Cell Death Protein 1 (PD-1)
+299875214,NCT05981365,DRUG,Voxelotor,Drug drug interaction
+299875215,NCT05981365,DRUG,Bupropion,Drug drug interaction
+299875216,NCT05981365,DRUG,Repaglinide,Drug drug interaction
+299875217,NCT05981365,DRUG,Flurbiprofen,Drug drug interaction
+299875218,NCT05981365,DRUG,Omeprazole,Drug drug interaction
+299875219,NCT05981365,DRUG,Midazolam,Drug drug interaction
+299875220,NCT05981365,DRUG,Metformin,Drug drug interaction
+299875221,NCT05981365,DRUG,Furosemide,Drug drug interaction
+299875222,NCT05981365,DRUG,Rosuvastatin,Drug drug interaction
+299875277,NCT00671645,DRUG,"capecitabine, bevacizumab","Capecitabine 825 mg/m2 bid (on each therapy day of first 4 Therapy weeks) Bevacizumab 5 mg/kg weight; day 1, 15, 29"
+299875297,NCT00261352,DRUG,Tesaglitazar,
+299875298,NCT00261352,DRUG,Metformin,
+299875299,NCT00261352,DRUG,Fenofibrate,
+299875310,NCT00401310,DRUG,Comparator: Placebo,Placebo IV infusions 1hr/daily over 7 days.
+299875311,NCT00401310,DRUG,Comparator: MK0724,MK0724 8 mg/kg/hr 1 hr/daily over 7 days.
+299875337,NCT04909879,BIOLOGICAL,COVI-MSC,COVI-MSC are allogeneic culture-expanded adipose-derived mesenchymal stem cells
+299875338,NCT04909879,DRUG,Placebo,Excipient solution
+299875357,NCT00320801,DRUG,Buprenorphine transdermal patch,Buprenorphine transdermal patch 5 mcg/h applied for 7-day wear
+299875358,NCT00320801,DRUG,Buprenorphine transdermal patch,Buprenorphine transdermal patch 20 mcg/h applied for 7-day wear
+299875412,NCT00323362,DRUG,gemcitabine hydrochloride,"1000 mg/m2 given intravenously at a FDR of 10 mg/m2/min on Days 3 and 10, every 21 days."
+299875413,NCT00323362,DRUG,imatinib mesylate,"400 mg/day orally, given Days 1-5 and 8-12 every 21 days"
+299875464,NCT05790200,DRUG,Cadonilimab,"Cadonilimab (200 mg, administered on the first day of each cycle, Q3W, until there is no clinical benefit)+platinum-based chemotherapy, Q3W, 4-6 cycles), every 3 weeks (21 days) is a treatment cycle."
+299875529,NCT04535518,DRUG,IVIG,IVIG at a single dose of 2 g/kg
+299875530,NCT04535518,DRUG,Aspirin,"Aspirin 30 mg/kg in oral per day (given in 3 divided doses), then 3 to 5 mg/kg per day when fever subsides for 72 hours and C-reactive protein (CRP) is normal. Aspirin will be continued for at least 6 weeks after onset of illness."
+299875531,NCT04535518,DRUG,Infliximab,"Intravenous infliximab at single dose of 5 mg/kg, given more than 2 hours."
+299875733,NCT04479358,DRUG,Tocilizumab,Tocilizumab 40mg
+299875734,NCT04479358,DRUG,Tocilizumab,Tocilizumab 120mg
+299875735,NCT04479358,OTHER,Standard of Care,Tocilizumab-Free Standard of Care
+299875736,NCT04479358,OTHER,Standard of Care,Tocilizumab 400mg or 8mg/kg
+299875744,NCT05798611,DRUG,ART0380,Randomized patients will orally receive ART0380.
+299875757,NCT06011577,DRUG,REL-1017,REL-1017 tablet
+299875758,NCT06011577,DRUG,Placebo,Placebo tablet
+299875796,NCT05493683,DRUG,Disitamab vedotin,2.0mg/kg，q2w
+299875797,NCT05493683,DRUG,Tislelizumab,400mg，q6w
+299875932,NCT04895046,DRUG,Niraparib,300 mg taken orally (all cycles)
+299875933,NCT04895046,DRUG,Dostarlimab,500 mg (cycles 1-4) intravenously
+299875934,NCT04895046,DRUG,Dostarlimab,1000 mg (cycle 5+) intravenously
+299875959,NCT00470249,DRUG,Carboplatin,At a dose equivalent to an area under the concentration-time curve of 4.5 mg/ml.min on day 1 of every 2-week cycle
+299875960,NCT00470249,DRUG,Gemcitabine Hydrochloride,1500 mg/m2 on day 2 of every 2-week cycle
+299876019,NCT04465916,DRUG,EYP001a,Oral tablets
+299876020,NCT04465916,DRUG,Placebo,Oral tablets
+299876021,NCT04465916,DRUG,Nucleotide analogue (Entecavir or Tenofovir Disoproxil),Oral tablets
+299876047,NCT00265863,DRUG,mitomycin C,Mitomycin C is infused into the abdominal cavity by hyperthermic perfusion over 60 minutes.
+299876068,NCT01408056,DRUG,Timolol 0.5% Gel Forming Solution (GFS),Dose-based escalation schedule for topical application:~4-8 kg: Day 0-7: 1 drop every other day; Day 7-14: 1 drop daily; Day 14 - Day 60: 1 drop twice per day~8-12 kg: Day 07: 1 drop daily; Day 7-14: 1 drop twice per day; Day 14 - Day 60: 2 drops twice per day
+299876069,NCT01408056,DRUG,Mupirocin 2% Ointment,Topical application twice per day for 60 days
+299876264,NCT00544778,BIOLOGICAL,filgrastim,
+299876265,NCT00544778,DRUG,dexrazoxane hydrochloride,
+299876266,NCT00544778,DRUG,doxorubicin hydrochloride,
+299876267,NCT00544778,DRUG,ifosfamide,
+299876268,NCT00544778,DRUG,irinotecan hydrochloride,
+299876269,NCT00544778,GENETIC,protein expression analysis,
+299876270,NCT00544778,OTHER,immunoenzyme technique,
+299876271,NCT00544778,PROCEDURE,adjuvant therapy,
+299876272,NCT00544778,PROCEDURE,conventional surgery,
+299876273,NCT00544778,PROCEDURE,neoadjuvant therapy,
+299876274,NCT00544778,RADIATION,radiation therapy,
+299876292,NCT05005468,DRUG,Camrelizumab,"Camrelizumab is given on the first day of each cycle, intravenous drip."
+299876293,NCT05005468,DRUG,Famitinib,"Famitinib is administered orally, once a day."
+299876308,NCT03112720,DEVICE,Epidural Blood Patch,"A device: 17 gauge Tuohy needle will be placed to the epidural space using the loss of resistance technique. Once positioned a sterile stylet will be replaced within the needle to maintain the sterility of the epidural space. A tourniquet may be used to identify a peripheral venous site, which will be sterilely prepped with betadine x3 and then chloraprep. Venipuncture will be performed with a device: 20gauge or larger needle. 20mL of blood will be aspirated in a sterile system into an appropriately sized syringe. After sterile transfer, this autologous blood will be slowly injected into the epidural space."
+299876309,NCT03112720,DRUG,Sphenopalatine Ganglion Block,"The drug: 5% lidocaine ointment, a local anesthetic, will be applied to the end of a device: long channeled cotton tipped applicator inserted into both nares and placed over the mucosa in the area of posterior aspect of the middle ethmoid, toward the presumed anatomic location of the sphenopalatine ganglion, evidenced by a slight resistance at the appropriate depth. 5mL of drug: 1% lidocaine solution will then be injected into the hollow shaft of the device: applicator and allowed to topically anesthetize the ganglion by gravity flow for 30 minutes."
+299876401,NCT00517868,DRUG,URG101,Bladder instillation of URG101 or Placebo in random order on treatment 1 and treatment 2 followed by an open-label URG101 on treatment 3 within the same week.
+299876402,NCT00517868,DRUG,Placebo,Liquid formulation without active URG101 drug components
+299876419,NCT05349760,BIOLOGICAL,AMB-05X,A fully human monoclonal immunoglobulin (IgG2) directed against c-fms
+299876420,NCT05349760,DRUG,Placebo,Saline/D5W
+299876488,NCT00483119,DRUG,intravenous immunoglobulin,Gamunex 10% 500/mg/kg/day x four days per cycle total of four cycles
+299876489,NCT00483119,DRUG,cyclophosphamide,cyclophosphamide dose of 2mg/kg/day divided into three-times daily oral administration
+299876533,NCT04190056,BIOLOGICAL,Pembrolizumab,Given IV
+299876534,NCT04190056,DRUG,Tamoxifen,Given PO
+299876535,NCT04190056,DRUG,Vorinostat,Given PO
+299876562,NCT01119118,DRUG,ZD4054,"All patients will be treated with ZD4054 at 10 mg PO daily, repeated in four week cycles (1 cycle = 28 days). All patients will initially undergo NaF and FDG PET/CT and MRI imaging at baseline (scan#1), and then again after 4 weeks (scan#2) of ZD4054 exposure. Subsequently, ZD4054 will be held for 2 weeks followed by the final NaF and FDG-PET/CT and MRI acquisition (scan#3). After the final PET/MRI is obtained, patients will resume ZD4054 and be assessed for safety prior to each new cycle of therapy. Standard disease evaluation assessments will be conducted after cycle#3, and repeated after every third cycle (sooner if clinically indicated). Therapy will continue until radiographical/clinical disease progression or unacceptable toxicity"
+299876713,NCT05657457,DRUG,Tenecteplase,intra-arterial tenecteplase
+299876735,NCT01340794,OTHER,Laboratory Biomarker Analysis,Correlative studies
+299876736,NCT01340794,DRUG,Pazopanib Hydrochloride,Given PO
+299876772,NCT00511329,DRUG,somatropin [rDNA origin] for injection,"Genotropin will be started at 0.3 mg/kg/week administered by daily subcutaneous injection. Doses will be increased by weight at each visit. Additionally, we will monitor IGF-1 levels at month 3, and 6 and adjust the Genotropin dose to maintain IGF-1 levels in the 50th -75th percentile for ages."
+299876819,NCT05005000,BIOLOGICAL,Micro-Fragmented Adipose Tissue (MFAT),1ml of autologous micro-fragmented adipose tissue will be used.
+299876820,NCT05005000,DRUG,Triamcinolone Acetonide 10mg/mL,The control group will receive a 1ml intraarticular injection of triamcinolone acetonide 10mg/ml.
+299877118,NCT03147040,DRUG,Carboplatin,Chemotherapy treatment with carboplatin and atezolizumab
+299877119,NCT03147040,DRUG,Atezolizumab,Chemotherapy treatment with carboplatin and atezolizumab
+299877151,NCT06105008,DRUG,Disitamab Vedotin,2.0 mg/kg intravenous (lV) infusion every 2 weeks
+299877152,NCT06105008,DRUG,Toripalimab,3.0 mg/kg intravenous (lV) infusion every 2 weeks
+299877261,NCT00210366,DRUG,Idarubicin,
+299877275,NCT01886105,DRUG,Sm-EDTMP,Subjects receive a tracer infusion of Samarium-153 EDTMP at 1 mCi/kg. 3D dosimetry using SPECT images are obtained post tracer infusion to determine the distribution of dose delivered to the tumor and surrounding normal tissues. Tracer activity will be applied to development of the external beam radiation (EBT) planning. Second treatment infusion of Samarium will then be implemented. Maximum activity administered will be 30 mCi/kg.
+299877276,NCT01886105,OTHER,Autologous Stem Cell Infusion,Administered 14 days after Treatment infusion of Samarium-153 EDTMP.
+299877277,NCT01886105,RADIATION,External Beam Radiotherapy,"The radiotherapy portion of the combined plan will be delivered according to the judgement of the treating radiation oncologist. The total dose to be used will be modified based on surrounding tissue tolerances as evidenced by Samarium infusion and SPECT image planning.~After the treatment infusion, SPECT scans will again be performed to confirm the total dose delivered and subsequently adjust the EBT portion of the treatment plan, as necessary."
+299877331,NCT04784455,DRUG,nomacopan (rVA576),The study population will consist of paediatric patients who have undergone allogeneic or autologous HSCT and develop HSCT-TMA within a year of HSCT
+299877357,NCT05495724,DRUG,Disitamab Vedotin Tislelizumab,Disitamab Vedotin 120mg will be administered on Day 1 of each cycle for 4 treatment cycles;Tislelizumab 200mg will be administered on Day 2 of each cycle for 4 treatment cycles.
+299877358,NCT05495724,DRUG,Disitamab Vedotin,Disitamab Vedotin
+299877607,NCT00313482,DRUG,Sargramostim,250 mcg/m2 SC days 2-15 of each cycle
+299877608,NCT00313482,DRUG,Docetaxel,75 mg/m2 IV over 1 hour on Day 1 of each cycle
+299877609,NCT00313482,DRUG,Prednisone,5 mg orally BID on Day 1 continuously
+299877719,NCT00003452,DRUG,Antineoplaston therapy (Atengenal + Astugenal),"Patients with Stage IV Bladder Cancer will receive Antineoplaston therapy (Atengenal + Astugenal).~The daily doses of A10 and AS2-1 are divided into six infusions, which are given at 4-hourly intervals. Each infusion starts with infusion of A10 and is immediately followed by infusion of AS2-1."
+299289865,NCT01419795,DRUG,lenalidomide,Given PO
+299289866,NCT01419795,BIOLOGICAL,rituximab,Given IV
+299289867,NCT01419795,OTHER,pharmacological study,Correlative studies
+299289868,NCT01419795,OTHER,laboratory biomarker analysis,Correlative studies
+299291598,NCT00313014,DRUG,Buprenorphine,Buprenorphine transdermal patch 5 mcg/h applied for 7-day wear.
+299291599,NCT00313014,DRUG,Buprenorphine,Buprenorphine transdermal patch 20 mcg/h applied for 7-day wear
+299291600,NCT00313014,DRUG,Oxycodone Immediate-Release,Oxycodone HCl immediate-release 40 mg (two 5-mg capsules every 6 hours).
+299291842,NCT03532542,DRUG,Casimersen,Casimersen solution for IV infusion
+299291843,NCT03532542,DRUG,Golodirsen,Golodirsen solution for IV infusion
+299487836,NCT00406419,DRUG,Methotrexate,Methotrexate tablet was administered orally at a dose 7.5-25 mg
+299487837,NCT00406419,DRUG,ocrelizumab,Ocrelizumab was administered via IV infusion at a dose specified in arm description
+299487838,NCT00406419,DRUG,Placebo,Matching placebo to ocrelizumab was administered via IV infusion
+299489342,NCT06536465,DRUG,REC-3964,REC-3964 given at a dose of either 500 mg q12h or 250 mg q12h
+299909305,NCT01829464,DRUG,Placebo,TAK-875 placebo-matching tablets
+299909306,NCT01829464,DRUG,TAK-875,TAK-875 tablets
+299909307,NCT01829464,DRUG,TAK-875,TAK-875 tablets
+299909738,NCT03432195,DRUG,Donepezil TDS,Donepezil Hydrochloride Transdermal Delivery System

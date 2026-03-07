@@ -1,0 +1,641 @@
+id,nct_id,mesh_term,downcase_mesh_term,mesh_type
+1231653184,NCT00406419,Arthritis,arthritis,mesh-ancestor
+1231653185,NCT00406419,Joint Diseases,joint diseases,mesh-ancestor
+1231653186,NCT00406419,Musculoskeletal Diseases,musculoskeletal diseases,mesh-ancestor
+1231653187,NCT00406419,Rheumatic Diseases,rheumatic diseases,mesh-ancestor
+1231653188,NCT00406419,Connective Tissue Diseases,connective tissue diseases,mesh-ancestor
+1231653189,NCT00406419,Skin and Connective Tissue Diseases,skin and connective tissue diseases,mesh-ancestor
+1231653190,NCT00406419,Autoimmune Diseases,autoimmune diseases,mesh-ancestor
+1231653191,NCT00406419,Immune System Diseases,immune system diseases,mesh-ancestor
+1231654442,NCT00406419,"Arthritis, Rheumatoid","arthritis, rheumatoid",mesh-list
+1231660084,NCT06536465,Gram-Positive Bacterial Infections,gram-positive bacterial infections,mesh-ancestor
+1231660085,NCT06536465,Bacterial Infections,bacterial infections,mesh-ancestor
+1231660086,NCT06536465,Bacterial Infections and Mycoses,bacterial infections and mycoses,mesh-ancestor
+1231660087,NCT06536465,Infections,infections,mesh-ancestor
+1231661833,NCT06536465,Clostridium Infections,clostridium infections,mesh-list
+1230795291,NCT01419795,"Lymphoma, T-Cell","lymphoma, t-cell",mesh-ancestor
+1230795292,NCT01419795,Lymphoma,lymphoma,mesh-ancestor
+1230795293,NCT01419795,Neoplasms by Histologic Type,neoplasms by histologic type,mesh-ancestor
+1230795294,NCT01419795,Neoplasms,neoplasms,mesh-ancestor
+1230795295,NCT01419795,Lymphoproliferative Disorders,lymphoproliferative disorders,mesh-ancestor
+1230795296,NCT01419795,Lymphatic Diseases,lymphatic diseases,mesh-ancestor
+1230795297,NCT01419795,Hemic and Lymphatic Diseases,hemic and lymphatic diseases,mesh-ancestor
+1230795298,NCT01419795,Immunoproliferative Disorders,immunoproliferative disorders,mesh-ancestor
+1230795299,NCT01419795,Immune System Diseases,immune system diseases,mesh-ancestor
+1230795300,NCT01419795,Lymphadenopathy,lymphadenopathy,mesh-ancestor
+1230795301,NCT01419795,Eye Neoplasms,eye neoplasms,mesh-ancestor
+1230795302,NCT01419795,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1230795303,NCT01419795,"Lymphoma, B-Cell","lymphoma, b-cell",mesh-ancestor
+1230795304,NCT01419795,"Leukemia, Lymphoid","leukemia, lymphoid",mesh-ancestor
+1230795305,NCT01419795,Leukemia,leukemia,mesh-ancestor
+1230795306,NCT01419795,Hematologic Diseases,hematologic diseases,mesh-ancestor
+1230795307,NCT01419795,Epstein-Barr Virus Infections,epstein-barr virus infections,mesh-ancestor
+1230795308,NCT01419795,Herpesviridae Infections,herpesviridae infections,mesh-ancestor
+1230795309,NCT01419795,DNA Virus Infections,dna virus infections,mesh-ancestor
+1230795310,NCT01419795,Virus Diseases,virus diseases,mesh-ancestor
+1230795311,NCT01419795,Infections,infections,mesh-ancestor
+1230795312,NCT01419795,Tumor Virus Infections,tumor virus infections,mesh-ancestor
+1230795313,NCT01419795,"Leukemia, B-Cell","leukemia, b-cell",mesh-ancestor
+1230795314,NCT01419795,Chronic Disease,chronic disease,mesh-ancestor
+1230795315,NCT01419795,Disease Attributes,disease attributes,mesh-ancestor
+1230795316,NCT01419795,Pathologic Processes,pathologic processes,mesh-ancestor
+1230795317,NCT01419795,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1230795318,NCT01419795,"Leukemia, T-Cell","leukemia, t-cell",mesh-ancestor
+1230795319,NCT01419795,"Neoplasms, Plasma Cell","neoplasms, plasma cell",mesh-ancestor
+1230795320,NCT01419795,Hemostatic Disorders,hemostatic disorders,mesh-ancestor
+1230795321,NCT01419795,Vascular Diseases,vascular diseases,mesh-ancestor
+1230795322,NCT01419795,Cardiovascular Diseases,cardiovascular diseases,mesh-ancestor
+1230795323,NCT01419795,Paraproteinemias,paraproteinemias,mesh-ancestor
+1230795324,NCT01419795,Blood Protein Disorders,blood protein disorders,mesh-ancestor
+1230795325,NCT01419795,Hemorrhagic Disorders,hemorrhagic disorders,mesh-ancestor
+1230798241,NCT01419795,"Lymphoma, Extranodal NK-T-Cell","lymphoma, extranodal nk-t-cell",mesh-list
+1230798242,NCT01419795,"Lymphoma, Large-Cell, Anaplastic","lymphoma, large-cell, anaplastic",mesh-list
+1230798243,NCT01419795,Immunoblastic Lymphadenopathy,immunoblastic lymphadenopathy,mesh-list
+1230798244,NCT01419795,Intraocular Lymphoma,intraocular lymphoma,mesh-list
+1230798245,NCT01419795,"Lymphoma, B-Cell, Marginal Zone","lymphoma, b-cell, marginal zone",mesh-list
+1230798246,NCT01419795,"Lymphoma, T-Cell, Peripheral","lymphoma, t-cell, peripheral",mesh-list
+1230798247,NCT01419795,"Leukemia, Prolymphocytic","leukemia, prolymphocytic",mesh-list
+1230798248,NCT01419795,Burkitt Lymphoma,burkitt lymphoma,mesh-list
+1230798249,NCT01419795,"Lymphoma, Large B-Cell, Diffuse","lymphoma, large b-cell, diffuse",mesh-list
+1230798250,NCT01419795,"Lymphoma, Non-Hodgkin","lymphoma, non-hodgkin",mesh-list
+1230798251,NCT01419795,"Lymphoma, Large-Cell, Immunoblastic","lymphoma, large-cell, immunoblastic",mesh-list
+1230798252,NCT01419795,Precursor Cell Lymphoblastic Leukemia-Lymphoma,precursor cell lymphoblastic leukemia-lymphoma,mesh-list
+1230798253,NCT01419795,Precursor T-Cell Lymphoblastic Leukemia-Lymphoma,precursor t-cell lymphoblastic leukemia-lymphoma,mesh-list
+1230798254,NCT01419795,"Lymphoma, T-Cell, Cutaneous","lymphoma, t-cell, cutaneous",mesh-list
+1230798255,NCT01419795,"Lymphoma, Follicular","lymphoma, follicular",mesh-list
+1230798256,NCT01419795,"Lymphoma, Mantle-Cell","lymphoma, mantle-cell",mesh-list
+1230798257,NCT01419795,Mycosis Fungoides,mycosis fungoides,mesh-list
+1230798258,NCT01419795,Sezary Syndrome,sezary syndrome,mesh-list
+1230798259,NCT01419795,"Leukemia, Lymphocytic, Chronic, B-Cell","leukemia, lymphocytic, chronic, b-cell",mesh-list
+1230798260,NCT01419795,"Leukemia, Hairy Cell","leukemia, hairy cell",mesh-list
+1230798261,NCT01419795,"Leukemia, Large Granular Lymphocytic","leukemia, large granular lymphocytic",mesh-list
+1230798262,NCT01419795,Waldenstrom Macroglobulinemia,waldenstrom macroglobulinemia,mesh-list
+1230802922,NCT00313014,Back Pain,back pain,mesh-ancestor
+1230802923,NCT00313014,Pain,pain,mesh-ancestor
+1230802924,NCT00313014,Neurologic Manifestations,neurologic manifestations,mesh-ancestor
+1230802925,NCT00313014,Signs and Symptoms,signs and symptoms,mesh-ancestor
+1230802926,NCT00313014,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1230803705,NCT03532542,Muscular Dystrophies,muscular dystrophies,mesh-ancestor
+1230803706,NCT03532542,"Muscular Disorders, Atrophic","muscular disorders, atrophic",mesh-ancestor
+1230803707,NCT03532542,Muscular Diseases,muscular diseases,mesh-ancestor
+1230803708,NCT03532542,Musculoskeletal Diseases,musculoskeletal diseases,mesh-ancestor
+1230803709,NCT03532542,Neuromuscular Diseases,neuromuscular diseases,mesh-ancestor
+1230803710,NCT03532542,Nervous System Diseases,nervous system diseases,mesh-ancestor
+1230803711,NCT03532542,"Genetic Diseases, X-Linked","genetic diseases, x-linked",mesh-ancestor
+1230803712,NCT03532542,"Genetic Diseases, Inborn","genetic diseases, inborn",mesh-ancestor
+1230803713,NCT03532542,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities","congenital, hereditary, and neonatal diseases and abnormalities",mesh-ancestor
+1230805533,NCT00313014,Low Back Pain,low back pain,mesh-list
+1230805704,NCT03532542,"Muscular Dystrophy, Duchenne","muscular dystrophy, duchenne",mesh-list
+1233316586,NCT01395342,Pregnancy Complications,pregnancy complications,mesh-ancestor
+1233316587,NCT01395342,Female Urogenital Diseases and Pregnancy Complications,female urogenital diseases and pregnancy complications,mesh-ancestor
+1233316588,NCT01395342,Urogenital Diseases,urogenital diseases,mesh-ancestor
+1233316589,NCT01395342,Hypertension,hypertension,mesh-ancestor
+1233316590,NCT01395342,Vascular Diseases,vascular diseases,mesh-ancestor
+1233316591,NCT01395342,Cardiovascular Diseases,cardiovascular diseases,mesh-ancestor
+1233316592,NCT01395342,Behavior,behavior,mesh-ancestor
+1233316694,NCT00630994,Bone Marrow Diseases,bone marrow diseases,mesh-ancestor
+1233316695,NCT00630994,Hematologic Diseases,hematologic diseases,mesh-ancestor
+1233316696,NCT00630994,Hemic and Lymphatic Diseases,hemic and lymphatic diseases,mesh-ancestor
+1233316697,NCT00630994,Blood Coagulation Disorders,blood coagulation disorders,mesh-ancestor
+1233316698,NCT00630994,Thrombocytosis,thrombocytosis,mesh-ancestor
+1233316699,NCT00630994,Blood Platelet Disorders,blood platelet disorders,mesh-ancestor
+1233316700,NCT00630994,Hemorrhagic Disorders,hemorrhagic disorders,mesh-ancestor
+1233316701,NCT00630994,Bone Marrow Neoplasms,bone marrow neoplasms,mesh-ancestor
+1233316702,NCT00630994,Hematologic Neoplasms,hematologic neoplasms,mesh-ancestor
+1233316703,NCT00630994,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233316704,NCT00630994,Neoplasms,neoplasms,mesh-ancestor
+1233316736,NCT01855321,Diabetes Mellitus,diabetes mellitus,mesh-ancestor
+1233316737,NCT01855321,Glucose Metabolism Disorders,glucose metabolism disorders,mesh-ancestor
+1233316738,NCT01855321,Metabolic Diseases,metabolic diseases,mesh-ancestor
+1233316739,NCT01855321,Nutritional and Metabolic Diseases,nutritional and metabolic diseases,mesh-ancestor
+1233316740,NCT01855321,Endocrine System Diseases,endocrine system diseases,mesh-ancestor
+1233316741,NCT01855321,Avitaminosis,avitaminosis,mesh-ancestor
+1233316742,NCT01855321,Deficiency Diseases,deficiency diseases,mesh-ancestor
+1233316743,NCT01855321,Malnutrition,malnutrition,mesh-ancestor
+1233316744,NCT01855321,Nutrition Disorders,nutrition disorders,mesh-ancestor
+1233316845,NCT04931147,Pathologic Processes,pathologic processes,mesh-ancestor
+1233316846,NCT04931147,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233316847,NCT04931147,Pulmonary Fibrosis,pulmonary fibrosis,mesh-ancestor
+1233316848,NCT04931147,"Lung Diseases, Interstitial","lung diseases, interstitial",mesh-ancestor
+1233316849,NCT04931147,Lung Diseases,lung diseases,mesh-ancestor
+1233316850,NCT04931147,Respiratory Tract Diseases,respiratory tract diseases,mesh-ancestor
+1233316851,NCT04931147,Fatty Liver,fatty liver,mesh-ancestor
+1233316852,NCT04931147,Digestive System Diseases,digestive system diseases,mesh-ancestor
+1233316853,NCT04931147,Urologic Diseases,urologic diseases,mesh-ancestor
+1233316854,NCT04931147,Female Urogenital Diseases,female urogenital diseases,mesh-ancestor
+1233316855,NCT04931147,Female Urogenital Diseases and Pregnancy Complications,female urogenital diseases and pregnancy complications,mesh-ancestor
+1233316856,NCT04931147,Urogenital Diseases,urogenital diseases,mesh-ancestor
+1233316857,NCT04931147,Male Urogenital Diseases,male urogenital diseases,mesh-ancestor
+1233316945,NCT05772546,Digestive System Neoplasms,digestive system neoplasms,mesh-ancestor
+1233316946,NCT05772546,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233316947,NCT05772546,Neoplasms,neoplasms,mesh-ancestor
+1233316948,NCT05772546,Digestive System Diseases,digestive system diseases,mesh-ancestor
+1233316949,NCT05772546,Gastrointestinal Diseases,gastrointestinal diseases,mesh-ancestor
+1233316952,NCT04957914,Diabetes Mellitus,diabetes mellitus,mesh-ancestor
+1233316953,NCT04957914,Glucose Metabolism Disorders,glucose metabolism disorders,mesh-ancestor
+1233316954,NCT04957914,Metabolic Diseases,metabolic diseases,mesh-ancestor
+1233316955,NCT04957914,Nutritional and Metabolic Diseases,nutritional and metabolic diseases,mesh-ancestor
+1233316956,NCT04957914,Endocrine System Diseases,endocrine system diseases,mesh-ancestor
+1233317043,NCT03891732,"Genital Neoplasms, Male","genital neoplasms, male",mesh-ancestor
+1233317044,NCT03891732,Urogenital Neoplasms,urogenital neoplasms,mesh-ancestor
+1233317045,NCT03891732,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233317046,NCT03891732,Neoplasms,neoplasms,mesh-ancestor
+1233317047,NCT03891732,"Genital Diseases, Male","genital diseases, male",mesh-ancestor
+1233317048,NCT03891732,Genital Diseases,genital diseases,mesh-ancestor
+1233317049,NCT03891732,Urogenital Diseases,urogenital diseases,mesh-ancestor
+1233317050,NCT03891732,Prostatic Diseases,prostatic diseases,mesh-ancestor
+1233317051,NCT03891732,Male Urogenital Diseases,male urogenital diseases,mesh-ancestor
+1233317090,NCT05916378,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233317091,NCT05916378,Neoplasms,neoplasms,mesh-ancestor
+1233317092,NCT05916378,Breast Diseases,breast diseases,mesh-ancestor
+1233317093,NCT05916378,Skin Diseases,skin diseases,mesh-ancestor
+1233317094,NCT05916378,Skin and Connective Tissue Diseases,skin and connective tissue diseases,mesh-ancestor
+1233317110,NCT05727267,Hepatitis B,hepatitis b,mesh-ancestor
+1233317111,NCT05727267,Blood-Borne Infections,blood-borne infections,mesh-ancestor
+1233317112,NCT05727267,Communicable Diseases,communicable diseases,mesh-ancestor
+1233317113,NCT05727267,Infections,infections,mesh-ancestor
+1233317114,NCT05727267,Hepadnaviridae Infections,hepadnaviridae infections,mesh-ancestor
+1233317115,NCT05727267,DNA Virus Infections,dna virus infections,mesh-ancestor
+1233317116,NCT05727267,Virus Diseases,virus diseases,mesh-ancestor
+1233317117,NCT05727267,"Hepatitis, Viral, Human","hepatitis, viral, human",mesh-ancestor
+1233317118,NCT05727267,"Hepatitis, Chronic","hepatitis, chronic",mesh-ancestor
+1233317119,NCT05727267,Hepatitis,hepatitis,mesh-ancestor
+1233317120,NCT05727267,Liver Diseases,liver diseases,mesh-ancestor
+1233317121,NCT05727267,Digestive System Diseases,digestive system diseases,mesh-ancestor
+1233317122,NCT05727267,Chronic Disease,chronic disease,mesh-ancestor
+1233317123,NCT05727267,Disease Attributes,disease attributes,mesh-ancestor
+1233317124,NCT05727267,Pathologic Processes,pathologic processes,mesh-ancestor
+1233317125,NCT05727267,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233317161,NCT05963217,Disease Attributes,disease attributes,mesh-ancestor
+1233317162,NCT05963217,Pathologic Processes,pathologic processes,mesh-ancestor
+1233317163,NCT05963217,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233317164,NCT05963217,"Leukemia, B-Cell","leukemia, b-cell",mesh-ancestor
+1233317165,NCT05963217,"Leukemia, Lymphoid","leukemia, lymphoid",mesh-ancestor
+1233317166,NCT05963217,Leukemia,leukemia,mesh-ancestor
+1233317167,NCT05963217,Hematologic Diseases,hematologic diseases,mesh-ancestor
+1233317168,NCT05963217,Hemic and Lymphatic Diseases,hemic and lymphatic diseases,mesh-ancestor
+1233317169,NCT05963217,Lymphoproliferative Disorders,lymphoproliferative disorders,mesh-ancestor
+1233317170,NCT05963217,Lymphatic Diseases,lymphatic diseases,mesh-ancestor
+1233317171,NCT05963217,Immunoproliferative Disorders,immunoproliferative disorders,mesh-ancestor
+1233317172,NCT05963217,Chronic Disease,chronic disease,mesh-ancestor
+1233317179,NCT05644756,Personal Satisfaction,personal satisfaction,mesh-ancestor
+1233317180,NCT05644756,Behavior,behavior,mesh-ancestor
+1233317208,NCT06020378,"Hypertension, Pregnancy-Induced","hypertension, pregnancy-induced",mesh-ancestor
+1233317209,NCT06020378,Pregnancy Complications,pregnancy complications,mesh-ancestor
+1233317210,NCT06020378,Female Urogenital Diseases and Pregnancy Complications,female urogenital diseases and pregnancy complications,mesh-ancestor
+1233317211,NCT06020378,Urogenital Diseases,urogenital diseases,mesh-ancestor
+1233317212,NCT04638439,Hepatitis B,hepatitis b,mesh-ancestor
+1233317213,NCT04638439,Blood-Borne Infections,blood-borne infections,mesh-ancestor
+1233317214,NCT04638439,Communicable Diseases,communicable diseases,mesh-ancestor
+1233317215,NCT04638439,Infections,infections,mesh-ancestor
+1233317216,NCT04638439,Hepadnaviridae Infections,hepadnaviridae infections,mesh-ancestor
+1233317217,NCT04638439,DNA Virus Infections,dna virus infections,mesh-ancestor
+1233317218,NCT04638439,Virus Diseases,virus diseases,mesh-ancestor
+1233317219,NCT04638439,"Hepatitis, Viral, Human","hepatitis, viral, human",mesh-ancestor
+1233317220,NCT04638439,"Hepatitis, Chronic","hepatitis, chronic",mesh-ancestor
+1233317221,NCT04638439,Hepatitis,hepatitis,mesh-ancestor
+1233317222,NCT04638439,Liver Diseases,liver diseases,mesh-ancestor
+1233317223,NCT04638439,Digestive System Diseases,digestive system diseases,mesh-ancestor
+1233317224,NCT04638439,Chronic Disease,chronic disease,mesh-ancestor
+1233317225,NCT04638439,Disease Attributes,disease attributes,mesh-ancestor
+1233317226,NCT04638439,Pathologic Processes,pathologic processes,mesh-ancestor
+1233317227,NCT04638439,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233317231,NCT06839872,"Leukemia, B-Cell","leukemia, b-cell",mesh-ancestor
+1233317232,NCT06839872,"Leukemia, Lymphoid","leukemia, lymphoid",mesh-ancestor
+1233317233,NCT06839872,Leukemia,leukemia,mesh-ancestor
+1233317234,NCT06839872,Neoplasms by Histologic Type,neoplasms by histologic type,mesh-ancestor
+1233317235,NCT06839872,Neoplasms,neoplasms,mesh-ancestor
+1233317236,NCT06839872,Hematologic Diseases,hematologic diseases,mesh-ancestor
+1233317237,NCT06839872,Hemic and Lymphatic Diseases,hemic and lymphatic diseases,mesh-ancestor
+1233317238,NCT06839872,Lymphoproliferative Disorders,lymphoproliferative disorders,mesh-ancestor
+1233317239,NCT06839872,Lymphatic Diseases,lymphatic diseases,mesh-ancestor
+1233317240,NCT06839872,Immunoproliferative Disorders,immunoproliferative disorders,mesh-ancestor
+1233317241,NCT06839872,Immune System Diseases,immune system diseases,mesh-ancestor
+1233317242,NCT06839872,Chronic Disease,chronic disease,mesh-ancestor
+1233317243,NCT06839872,Disease Attributes,disease attributes,mesh-ancestor
+1233317244,NCT06839872,Pathologic Processes,pathologic processes,mesh-ancestor
+1233317245,NCT06839872,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233317256,NCT04663997,"Genital Neoplasms, Male","genital neoplasms, male",mesh-ancestor
+1233317257,NCT04663997,Urogenital Neoplasms,urogenital neoplasms,mesh-ancestor
+1233317258,NCT04663997,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233317259,NCT04663997,Neoplasms,neoplasms,mesh-ancestor
+1233317260,NCT04663997,"Genital Diseases, Male","genital diseases, male",mesh-ancestor
+1233317261,NCT04663997,Genital Diseases,genital diseases,mesh-ancestor
+1233317262,NCT04663997,Urogenital Diseases,urogenital diseases,mesh-ancestor
+1233317263,NCT04663997,Prostatic Diseases,prostatic diseases,mesh-ancestor
+1233317264,NCT04663997,Male Urogenital Diseases,male urogenital diseases,mesh-ancestor
+1233317305,NCT04238624,Carcinoma,carcinoma,mesh-ancestor
+1233317306,NCT04238624,"Neoplasms, Glandular and Epithelial","neoplasms, glandular and epithelial",mesh-ancestor
+1233317307,NCT04238624,Neoplasms by Histologic Type,neoplasms by histologic type,mesh-ancestor
+1233317308,NCT04238624,Neoplasms,neoplasms,mesh-ancestor
+1233317309,NCT04238624,Endocrine Gland Neoplasms,endocrine gland neoplasms,mesh-ancestor
+1233317310,NCT04238624,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233317311,NCT04238624,Head and Neck Neoplasms,head and neck neoplasms,mesh-ancestor
+1233317312,NCT04238624,Endocrine System Diseases,endocrine system diseases,mesh-ancestor
+1233317313,NCT04238624,Thyroid Diseases,thyroid diseases,mesh-ancestor
+1233317365,NCT05981365,"Anemia, Hemolytic, Congenital","anemia, hemolytic, congenital",mesh-ancestor
+1233317366,NCT05981365,"Anemia, Hemolytic","anemia, hemolytic",mesh-ancestor
+1233317367,NCT05981365,Anemia,anemia,mesh-ancestor
+1233317368,NCT05981365,Hematologic Diseases,hematologic diseases,mesh-ancestor
+1233317369,NCT05981365,Hemic and Lymphatic Diseases,hemic and lymphatic diseases,mesh-ancestor
+1233317370,NCT05981365,Hemoglobinopathies,hemoglobinopathies,mesh-ancestor
+1233317371,NCT05981365,"Genetic Diseases, Inborn","genetic diseases, inborn",mesh-ancestor
+1233317372,NCT05981365,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities","congenital, hereditary, and neonatal diseases and abnormalities",mesh-ancestor
+1233317583,NCT00671645,Colorectal Neoplasms,colorectal neoplasms,mesh-ancestor
+1233317584,NCT00671645,Intestinal Neoplasms,intestinal neoplasms,mesh-ancestor
+1233317585,NCT00671645,Gastrointestinal Neoplasms,gastrointestinal neoplasms,mesh-ancestor
+1233317586,NCT00671645,Digestive System Neoplasms,digestive system neoplasms,mesh-ancestor
+1233317587,NCT00671645,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233317588,NCT00671645,Neoplasms,neoplasms,mesh-ancestor
+1233317589,NCT00671645,Digestive System Diseases,digestive system diseases,mesh-ancestor
+1233317590,NCT00671645,Gastrointestinal Diseases,gastrointestinal diseases,mesh-ancestor
+1233317591,NCT00671645,Intestinal Diseases,intestinal diseases,mesh-ancestor
+1233317592,NCT00671645,Rectal Diseases,rectal diseases,mesh-ancestor
+1233317593,NCT00671645,"Neoplasms, Glandular and Epithelial","neoplasms, glandular and epithelial",mesh-ancestor
+1233317594,NCT00671645,Neoplasms by Histologic Type,neoplasms by histologic type,mesh-ancestor
+1233317595,NCT00671645,Erythema,erythema,mesh-ancestor
+1233317596,NCT00671645,Skin Diseases,skin diseases,mesh-ancestor
+1233317597,NCT00671645,Skin and Connective Tissue Diseases,skin and connective tissue diseases,mesh-ancestor
+1233317598,NCT00671645,"Skin Diseases, Vesiculobullous","skin diseases, vesiculobullous",mesh-ancestor
+1233317623,NCT00261352,Diabetes Mellitus,diabetes mellitus,mesh-ancestor
+1233317624,NCT00261352,Glucose Metabolism Disorders,glucose metabolism disorders,mesh-ancestor
+1233317625,NCT00261352,Metabolic Diseases,metabolic diseases,mesh-ancestor
+1233317626,NCT00261352,Nutritional and Metabolic Diseases,nutritional and metabolic diseases,mesh-ancestor
+1233317627,NCT00261352,Endocrine System Diseases,endocrine system diseases,mesh-ancestor
+1233317643,NCT00401310,Cerebral Infarction,cerebral infarction,mesh-ancestor
+1233317644,NCT00401310,Brain Infarction,brain infarction,mesh-ancestor
+1233317645,NCT00401310,Brain Ischemia,brain ischemia,mesh-ancestor
+1233317646,NCT00401310,Cerebrovascular Disorders,cerebrovascular disorders,mesh-ancestor
+1233317647,NCT00401310,Brain Diseases,brain diseases,mesh-ancestor
+1233317648,NCT00401310,Central Nervous System Diseases,central nervous system diseases,mesh-ancestor
+1233317649,NCT00401310,Nervous System Diseases,nervous system diseases,mesh-ancestor
+1233317650,NCT00401310,Cerebral Arterial Diseases,cerebral arterial diseases,mesh-ancestor
+1233317651,NCT00401310,Intracranial Arterial Diseases,intracranial arterial diseases,mesh-ancestor
+1233317652,NCT00401310,Stroke,stroke,mesh-ancestor
+1233317653,NCT00401310,Vascular Diseases,vascular diseases,mesh-ancestor
+1233317654,NCT00401310,Cardiovascular Diseases,cardiovascular diseases,mesh-ancestor
+1233317655,NCT00401310,Infarction,infarction,mesh-ancestor
+1233317656,NCT00401310,Ischemia,ischemia,mesh-ancestor
+1233317657,NCT00401310,Pathologic Processes,pathologic processes,mesh-ancestor
+1233317658,NCT00401310,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233317659,NCT00401310,Necrosis,necrosis,mesh-ancestor
+1233317712,NCT04909879,Lung Diseases,lung diseases,mesh-ancestor
+1233317713,NCT04909879,Respiratory Tract Diseases,respiratory tract diseases,mesh-ancestor
+1233317714,NCT04909879,Respiration Disorders,respiration disorders,mesh-ancestor
+1233317715,NCT04909879,Lung Injury,lung injury,mesh-ancestor
+1233317777,NCT00320801,Arthritis,arthritis,mesh-ancestor
+1233317778,NCT00320801,Joint Diseases,joint diseases,mesh-ancestor
+1233317779,NCT00320801,Musculoskeletal Diseases,musculoskeletal diseases,mesh-ancestor
+1233317780,NCT00320801,Rheumatic Diseases,rheumatic diseases,mesh-ancestor
+1233317781,NCT00320801,Pain,pain,mesh-ancestor
+1233317782,NCT00320801,Neurologic Manifestations,neurologic manifestations,mesh-ancestor
+1233317783,NCT00320801,Signs and Symptoms,signs and symptoms,mesh-ancestor
+1233317784,NCT00320801,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233317970,NCT00323362,Respiratory Tract Neoplasms,respiratory tract neoplasms,mesh-ancestor
+1233317971,NCT00323362,Thoracic Neoplasms,thoracic neoplasms,mesh-ancestor
+1233317972,NCT00323362,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233317973,NCT00323362,Neoplasms,neoplasms,mesh-ancestor
+1233317974,NCT00323362,Lung Diseases,lung diseases,mesh-ancestor
+1233317975,NCT00323362,Respiratory Tract Diseases,respiratory tract diseases,mesh-ancestor
+1233317976,NCT00323362,"Carcinoma, Bronchogenic","carcinoma, bronchogenic",mesh-ancestor
+1233317977,NCT00323362,Bronchial Neoplasms,bronchial neoplasms,mesh-ancestor
+1233318170,NCT05790200,Carcinoma,carcinoma,mesh-ancestor
+1233318171,NCT05790200,"Neoplasms, Glandular and Epithelial","neoplasms, glandular and epithelial",mesh-ancestor
+1233318172,NCT05790200,Neoplasms by Histologic Type,neoplasms by histologic type,mesh-ancestor
+1233318173,NCT05790200,Neoplasms,neoplasms,mesh-ancestor
+1233318174,NCT05790200,Nasopharyngeal Neoplasms,nasopharyngeal neoplasms,mesh-ancestor
+1233318175,NCT05790200,Pharyngeal Neoplasms,pharyngeal neoplasms,mesh-ancestor
+1233318176,NCT05790200,Otorhinolaryngologic Neoplasms,otorhinolaryngologic neoplasms,mesh-ancestor
+1233318177,NCT05790200,Head and Neck Neoplasms,head and neck neoplasms,mesh-ancestor
+1233318178,NCT05790200,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233318179,NCT05790200,Nasopharyngeal Diseases,nasopharyngeal diseases,mesh-ancestor
+1233318180,NCT05790200,Pharyngeal Diseases,pharyngeal diseases,mesh-ancestor
+1233318181,NCT05790200,Stomatognathic Diseases,stomatognathic diseases,mesh-ancestor
+1233318182,NCT05790200,Otorhinolaryngologic Diseases,otorhinolaryngologic diseases,mesh-ancestor
+1233318387,NCT04535518,Vasculitis,vasculitis,mesh-ancestor
+1233318388,NCT04535518,Vascular Diseases,vascular diseases,mesh-ancestor
+1233318389,NCT04535518,Cardiovascular Diseases,cardiovascular diseases,mesh-ancestor
+1233318390,NCT04535518,Lymphatic Diseases,lymphatic diseases,mesh-ancestor
+1233318391,NCT04535518,Hemic and Lymphatic Diseases,hemic and lymphatic diseases,mesh-ancestor
+1233318392,NCT04535518,"Skin Diseases, Vascular","skin diseases, vascular",mesh-ancestor
+1233318393,NCT04535518,Skin Diseases,skin diseases,mesh-ancestor
+1233318394,NCT04535518,Skin and Connective Tissue Diseases,skin and connective tissue diseases,mesh-ancestor
+1233318996,NCT04479358,"Pneumonia, Viral","pneumonia, viral",mesh-ancestor
+1233318997,NCT04479358,Pneumonia,pneumonia,mesh-ancestor
+1233318998,NCT04479358,Respiratory Tract Infections,respiratory tract infections,mesh-ancestor
+1233318999,NCT04479358,Infections,infections,mesh-ancestor
+1233319000,NCT04479358,Virus Diseases,virus diseases,mesh-ancestor
+1233319001,NCT04479358,Coronavirus Infections,coronavirus infections,mesh-ancestor
+1233319002,NCT04479358,Coronaviridae Infections,coronaviridae infections,mesh-ancestor
+1233319003,NCT04479358,Nidovirales Infections,nidovirales infections,mesh-ancestor
+1233319004,NCT04479358,RNA Virus Infections,rna virus infections,mesh-ancestor
+1233319005,NCT04479358,Lung Diseases,lung diseases,mesh-ancestor
+1233319006,NCT04479358,Respiratory Tract Diseases,respiratory tract diseases,mesh-ancestor
+1233319016,NCT05798611,Uterine Neoplasms,uterine neoplasms,mesh-ancestor
+1233319017,NCT05798611,"Genital Neoplasms, Female","genital neoplasms, female",mesh-ancestor
+1233319018,NCT05798611,Urogenital Neoplasms,urogenital neoplasms,mesh-ancestor
+1233319019,NCT05798611,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233319020,NCT05798611,Neoplasms,neoplasms,mesh-ancestor
+1233319021,NCT05798611,Uterine Diseases,uterine diseases,mesh-ancestor
+1233319022,NCT05798611,"Genital Diseases, Female","genital diseases, female",mesh-ancestor
+1233319023,NCT05798611,Female Urogenital Diseases,female urogenital diseases,mesh-ancestor
+1233319024,NCT05798611,Female Urogenital Diseases and Pregnancy Complications,female urogenital diseases and pregnancy complications,mesh-ancestor
+1233319025,NCT05798611,Urogenital Diseases,urogenital diseases,mesh-ancestor
+1233319026,NCT05798611,Genital Diseases,genital diseases,mesh-ancestor
+1233319027,NCT05798611,Neoplastic Processes,neoplastic processes,mesh-ancestor
+1233319028,NCT05798611,Pathologic Processes,pathologic processes,mesh-ancestor
+1233319029,NCT05798611,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233319091,NCT06011577,Depressive Disorder,depressive disorder,mesh-ancestor
+1233319092,NCT06011577,Mood Disorders,mood disorders,mesh-ancestor
+1233319093,NCT06011577,Mental Disorders,mental disorders,mesh-ancestor
+1233319094,NCT06011577,Behavioral Symptoms,behavioral symptoms,mesh-ancestor
+1233319095,NCT06011577,Behavior,behavior,mesh-ancestor
+1233319196,NCT05493683,Intestinal Neoplasms,intestinal neoplasms,mesh-ancestor
+1233319197,NCT05493683,Gastrointestinal Neoplasms,gastrointestinal neoplasms,mesh-ancestor
+1233319198,NCT05493683,Digestive System Neoplasms,digestive system neoplasms,mesh-ancestor
+1233319199,NCT05493683,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233319200,NCT05493683,Neoplasms,neoplasms,mesh-ancestor
+1233319201,NCT05493683,Digestive System Diseases,digestive system diseases,mesh-ancestor
+1233319202,NCT05493683,Gastrointestinal Diseases,gastrointestinal diseases,mesh-ancestor
+1233319203,NCT05493683,Colonic Diseases,colonic diseases,mesh-ancestor
+1233319204,NCT05493683,Intestinal Diseases,intestinal diseases,mesh-ancestor
+1233319205,NCT05493683,Rectal Diseases,rectal diseases,mesh-ancestor
+1233319468,NCT01395342,Pre-Eclampsia,pre-eclampsia,mesh-list
+1233319469,NCT01395342,"Hypertension, Pregnancy-Induced","hypertension, pregnancy-induced",mesh-list
+1233319470,NCT01395342,Motor Activity,motor activity,mesh-list
+1233319500,NCT00630994,Myeloproliferative Disorders,myeloproliferative disorders,mesh-list
+1233319501,NCT00630994,Primary Myelofibrosis,primary myelofibrosis,mesh-list
+1233319502,NCT00630994,"Thrombocythemia, Essential","thrombocythemia, essential",mesh-list
+1233319503,NCT00630994,Polycythemia Vera,polycythemia vera,mesh-list
+1233319511,NCT01855321,"Diabetes Mellitus, Type 2","diabetes mellitus, type 2",mesh-list
+1233319512,NCT01855321,Vitamin D Deficiency,vitamin d deficiency,mesh-list
+1233319555,NCT04931147,Fibrosis,fibrosis,mesh-list
+1233319556,NCT04931147,Inflammation,inflammation,mesh-list
+1233319557,NCT04931147,Idiopathic Pulmonary Fibrosis,idiopathic pulmonary fibrosis,mesh-list
+1233319558,NCT04931147,Non-alcoholic Fatty Liver Disease,non-alcoholic fatty liver disease,mesh-list
+1233319559,NCT04931147,Liver Diseases,liver diseases,mesh-list
+1233319560,NCT04931147,Kidney Diseases,kidney diseases,mesh-list
+1233319584,NCT05772546,Gastrointestinal Neoplasms,gastrointestinal neoplasms,mesh-list
+1233319585,NCT05772546,Jacobs syndrome,jacobs syndrome,mesh-list
+1233319587,NCT04957914,"Diabetes Mellitus, Type 2","diabetes mellitus, type 2",mesh-list
+1233319605,NCT03891732,Prostatic Neoplasms,prostatic neoplasms,mesh-list
+1233319619,NCT05916378,Breast Neoplasms,breast neoplasms,mesh-list
+1233319625,NCT05727267,"Hepatitis B, Chronic","hepatitis b, chronic",mesh-list
+1233319626,NCT01169259,Neoplasms,neoplasms,mesh-list
+1233319627,NCT01169259,Cardiovascular Diseases,cardiovascular diseases,mesh-list
+1233319634,NCT05963217,Recurrence,recurrence,mesh-list
+1233319635,NCT05963217,"Leukemia, Lymphocytic, Chronic, B-Cell","leukemia, lymphocytic, chronic, b-cell",mesh-list
+1233319636,NCT05963217,Lymphoma,lymphoma,mesh-list
+1233319637,NCT05963217,Neoplasms by Histologic Type,neoplasms by histologic type,mesh-list
+1233319638,NCT05963217,Neoplasms,neoplasms,mesh-list
+1233319639,NCT05963217,"Neoplasms, Experimental","neoplasms, experimental",mesh-list
+1233319640,NCT05963217,Immune System Diseases,immune system diseases,mesh-list
+1233319642,NCT05993299,Neoplasms,neoplasms,mesh-list
+1233319643,NCT05644756,Psychological Well-Being,psychological well-being,mesh-list
+1233319650,NCT06020378,Pre-Eclampsia,pre-eclampsia,mesh-list
+1233319651,NCT04638439,"Hepatitis B, Chronic","hepatitis b, chronic",mesh-list
+1233319654,NCT06839872,"Leukemia, Lymphocytic, Chronic, B-Cell","leukemia, lymphocytic, chronic, b-cell",mesh-list
+1233319657,NCT04663997,Prostatic Neoplasms,prostatic neoplasms,mesh-list
+1233319668,NCT04238624,"Thyroid Carcinoma, Anaplastic","thyroid carcinoma, anaplastic",mesh-list
+1233319669,NCT04238624,Thyroid Neoplasms,thyroid neoplasms,mesh-list
+1233319688,NCT05981365,"Anemia, Sickle Cell","anemia, sickle cell",mesh-list
+1233319739,NCT00671645,Rectal Neoplasms,rectal neoplasms,mesh-list
+1233319740,NCT00671645,Carcinoma,carcinoma,mesh-list
+1233319741,NCT00671645,Erythema Multiforme,erythema multiforme,mesh-list
+1233319747,NCT00261352,"Diabetes Mellitus, Type 2","diabetes mellitus, type 2",mesh-list
+1233319754,NCT00401310,"Infarction, Middle Cerebral Artery","infarction, middle cerebral artery",mesh-list
+1233319767,NCT04909879,Respiratory Distress Syndrome,respiratory distress syndrome,mesh-list
+1233319768,NCT04909879,Acute Lung Injury,acute lung injury,mesh-list
+1233319783,NCT00320801,Osteoarthritis,osteoarthritis,mesh-list
+1233319784,NCT00320801,Chronic Pain,chronic pain,mesh-list
+1233319830,NCT00323362,Lung Neoplasms,lung neoplasms,mesh-list
+1233319831,NCT00323362,"Carcinoma, Non-Small-Cell Lung","carcinoma, non-small-cell lung",mesh-list
+1233319879,NCT05790200,Nasopharyngeal Carcinoma,nasopharyngeal carcinoma,mesh-list
+1233319938,NCT04535518,Mucocutaneous Lymph Node Syndrome,mucocutaneous lymph node syndrome,mesh-list
+1233320102,NCT04479358,COVID-19,covid-19,mesh-list
+1233320104,NCT05798611,Endometrial Neoplasms,endometrial neoplasms,mesh-list
+1233320105,NCT05798611,Neoplasm Metastasis,neoplasm metastasis,mesh-list
+1233320116,NCT06011577,"Depressive Disorder, Major","depressive disorder, major",mesh-list
+1233320117,NCT06011577,Depression,depression,mesh-list
+1233320140,NCT05493683,Colorectal Neoplasms,colorectal neoplasms,mesh-list
+1233320386,NCT04895046,Adenocarcinoma,adenocarcinoma,mesh-ancestor
+1233320387,NCT04895046,Carcinoma,carcinoma,mesh-ancestor
+1233320388,NCT04895046,"Neoplasms, Glandular and Epithelial","neoplasms, glandular and epithelial",mesh-ancestor
+1233320389,NCT04895046,Neoplasms by Histologic Type,neoplasms by histologic type,mesh-ancestor
+1233320390,NCT04895046,Neoplasms,neoplasms,mesh-ancestor
+1233320391,NCT04895046,Neoplastic Processes,neoplastic processes,mesh-ancestor
+1233320392,NCT04895046,Pathologic Processes,pathologic processes,mesh-ancestor
+1233320393,NCT04895046,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233320459,NCT00470249,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233320460,NCT00470249,Neoplasms,neoplasms,mesh-ancestor
+1233320461,NCT00470249,Breast Diseases,breast diseases,mesh-ancestor
+1233320462,NCT00470249,Skin Diseases,skin diseases,mesh-ancestor
+1233320463,NCT00470249,Skin and Connective Tissue Diseases,skin and connective tissue diseases,mesh-ancestor
+1233320689,NCT04465916,Hepatitis B,hepatitis b,mesh-ancestor
+1233320690,NCT04465916,Blood-Borne Infections,blood-borne infections,mesh-ancestor
+1233320691,NCT04465916,Communicable Diseases,communicable diseases,mesh-ancestor
+1233320692,NCT04465916,Infections,infections,mesh-ancestor
+1233320693,NCT04465916,Hepadnaviridae Infections,hepadnaviridae infections,mesh-ancestor
+1233320694,NCT04465916,DNA Virus Infections,dna virus infections,mesh-ancestor
+1233320695,NCT04465916,Virus Diseases,virus diseases,mesh-ancestor
+1233320696,NCT04465916,"Hepatitis, Viral, Human","hepatitis, viral, human",mesh-ancestor
+1233320697,NCT04465916,"Hepatitis, Chronic","hepatitis, chronic",mesh-ancestor
+1233320698,NCT04465916,Hepatitis,hepatitis,mesh-ancestor
+1233320699,NCT04465916,Liver Diseases,liver diseases,mesh-ancestor
+1233320700,NCT04465916,Digestive System Diseases,digestive system diseases,mesh-ancestor
+1233320701,NCT04465916,Chronic Disease,chronic disease,mesh-ancestor
+1233320702,NCT04465916,Disease Attributes,disease attributes,mesh-ancestor
+1233320703,NCT04465916,Pathologic Processes,pathologic processes,mesh-ancestor
+1233320704,NCT04465916,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233320781,NCT00265863,Neoplastic Processes,neoplastic processes,mesh-ancestor
+1233320782,NCT00265863,Neoplasms,neoplasms,mesh-ancestor
+1233320783,NCT00265863,Pathologic Processes,pathologic processes,mesh-ancestor
+1233320784,NCT00265863,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233320876,NCT01408056,"Neoplasms, Vascular Tissue","neoplasms, vascular tissue",mesh-ancestor
+1233320877,NCT01408056,Neoplasms by Histologic Type,neoplasms by histologic type,mesh-ancestor
+1233320878,NCT01408056,Neoplasms,neoplasms,mesh-ancestor
+1233320879,NCT01408056,Cardiovascular Abnormalities,cardiovascular abnormalities,mesh-ancestor
+1233320880,NCT01408056,Cardiovascular Diseases,cardiovascular diseases,mesh-ancestor
+1233320881,NCT01408056,Congenital Abnormalities,congenital abnormalities,mesh-ancestor
+1233320882,NCT01408056,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities","congenital, hereditary, and neonatal diseases and abnormalities",mesh-ancestor
+1233321339,NCT00544778,"Neoplasms, Connective and Soft Tissue","neoplasms, connective and soft tissue",mesh-ancestor
+1233321340,NCT00544778,Neoplasms by Histologic Type,neoplasms by histologic type,mesh-ancestor
+1233321341,NCT00544778,Neoplasms,neoplasms,mesh-ancestor
+1233321342,NCT00544778,"Neoplasms, Bone Tissue","neoplasms, bone tissue",mesh-ancestor
+1233321343,NCT00544778,"Neoplasms, Connective Tissue","neoplasms, connective tissue",mesh-ancestor
+1233321344,NCT00544778,"Neuroectodermal Tumors, Primitive","neuroectodermal tumors, primitive",mesh-ancestor
+1233321345,NCT00544778,"Neoplasms, Neuroepithelial","neoplasms, neuroepithelial",mesh-ancestor
+1233321346,NCT00544778,Neuroectodermal Tumors,neuroectodermal tumors,mesh-ancestor
+1233321347,NCT00544778,"Neoplasms, Germ Cell and Embryonal","neoplasms, germ cell and embryonal",mesh-ancestor
+1233321348,NCT00544778,"Neoplasms, Glandular and Epithelial","neoplasms, glandular and epithelial",mesh-ancestor
+1233321349,NCT00544778,"Neoplasms, Nerve Tissue","neoplasms, nerve tissue",mesh-ancestor
+1233321452,NCT03112720,"Headache Disorders, Secondary","headache disorders, secondary",mesh-ancestor
+1233321453,NCT03112720,Headache Disorders,headache disorders,mesh-ancestor
+1233321454,NCT03112720,Brain Diseases,brain diseases,mesh-ancestor
+1233321455,NCT03112720,Central Nervous System Diseases,central nervous system diseases,mesh-ancestor
+1233321456,NCT03112720,Nervous System Diseases,nervous system diseases,mesh-ancestor
+1233321932,NCT00517868,Cystitis,cystitis,mesh-ancestor
+1233321933,NCT00517868,Urinary Bladder Diseases,urinary bladder diseases,mesh-ancestor
+1233321934,NCT00517868,Urologic Diseases,urologic diseases,mesh-ancestor
+1233321935,NCT00517868,Female Urogenital Diseases,female urogenital diseases,mesh-ancestor
+1233321936,NCT00517868,Female Urogenital Diseases and Pregnancy Complications,female urogenital diseases and pregnancy complications,mesh-ancestor
+1233321937,NCT00517868,Urogenital Diseases,urogenital diseases,mesh-ancestor
+1233321938,NCT00517868,Male Urogenital Diseases,male urogenital diseases,mesh-ancestor
+1233321939,NCT00517868,Neurologic Manifestations,neurologic manifestations,mesh-ancestor
+1233321940,NCT00517868,Signs and Symptoms,signs and symptoms,mesh-ancestor
+1233321941,NCT00517868,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233321990,NCT05349760,Pulmonary Fibrosis,pulmonary fibrosis,mesh-ancestor
+1233321991,NCT05349760,"Lung Diseases, Interstitial","lung diseases, interstitial",mesh-ancestor
+1233321992,NCT05349760,Lung Diseases,lung diseases,mesh-ancestor
+1233321993,NCT05349760,Respiratory Tract Diseases,respiratory tract diseases,mesh-ancestor
+1233322260,NCT00483119,"Skin Diseases, Vesiculobullous","skin diseases, vesiculobullous",mesh-ancestor
+1233322261,NCT00483119,Skin Diseases,skin diseases,mesh-ancestor
+1233322262,NCT00483119,Skin and Connective Tissue Diseases,skin and connective tissue diseases,mesh-ancestor
+1233322263,NCT00483119,Autoimmune Diseases,autoimmune diseases,mesh-ancestor
+1233322264,NCT00483119,Immune System Diseases,immune system diseases,mesh-ancestor
+1233322628,NCT01119118,"Genital Neoplasms, Male","genital neoplasms, male",mesh-ancestor
+1233322629,NCT01119118,Urogenital Neoplasms,urogenital neoplasms,mesh-ancestor
+1233322630,NCT01119118,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233322631,NCT01119118,Neoplasms,neoplasms,mesh-ancestor
+1233322632,NCT01119118,"Genital Diseases, Male","genital diseases, male",mesh-ancestor
+1233322633,NCT01119118,Genital Diseases,genital diseases,mesh-ancestor
+1233322634,NCT01119118,Urogenital Diseases,urogenital diseases,mesh-ancestor
+1233322635,NCT01119118,Prostatic Diseases,prostatic diseases,mesh-ancestor
+1233322636,NCT01119118,Male Urogenital Diseases,male urogenital diseases,mesh-ancestor
+1233322637,NCT01119118,Neoplastic Processes,neoplastic processes,mesh-ancestor
+1233322638,NCT01119118,Pathologic Processes,pathologic processes,mesh-ancestor
+1233322639,NCT01119118,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233323257,NCT05657457,Stroke,stroke,mesh-ancestor
+1233323258,NCT05657457,Cerebrovascular Disorders,cerebrovascular disorders,mesh-ancestor
+1233323259,NCT05657457,Brain Diseases,brain diseases,mesh-ancestor
+1233323260,NCT05657457,Central Nervous System Diseases,central nervous system diseases,mesh-ancestor
+1233323261,NCT05657457,Nervous System Diseases,nervous system diseases,mesh-ancestor
+1233323262,NCT05657457,Vascular Diseases,vascular diseases,mesh-ancestor
+1233323263,NCT05657457,Cardiovascular Diseases,cardiovascular diseases,mesh-ancestor
+1233323363,NCT04895046,Cholangiocarcinoma,cholangiocarcinoma,mesh-list
+1233323364,NCT04895046,Neoplasm Metastasis,neoplasm metastasis,mesh-list
+1233323378,NCT00470249,Breast Neoplasms,breast neoplasms,mesh-list
+1233323379,NCT00470249,"Breast Neoplasms, Male","breast neoplasms, male",mesh-list
+1233323424,NCT04465916,"Hepatitis B, Chronic","hepatitis b, chronic",mesh-list
+1233323453,NCT00265863,Neoplasm Metastasis,neoplasm metastasis,mesh-list
+1233323474,NCT01408056,Hemangioma,hemangioma,mesh-list
+1233323475,NCT01408056,"Hemangioma, Capillary","hemangioma, capillary",mesh-list
+1233323476,NCT01408056,Vascular Malformations,vascular malformations,mesh-list
+1233323603,NCT00544778,Sarcoma,sarcoma,mesh-list
+1233323604,NCT00544778,Osteosarcoma,osteosarcoma,mesh-list
+1233323605,NCT00544778,"Neuroectodermal Tumors, Primitive, Peripheral","neuroectodermal tumors, primitive, peripheral",mesh-list
+1233323626,NCT03112720,Post-Dural Puncture Headache,post-dural puncture headache,mesh-list
+1233323735,NCT00517868,"Cystitis, Interstitial","cystitis, interstitial",mesh-list
+1233323736,NCT00517868,Pain,pain,mesh-list
+1233323749,NCT05349760,Idiopathic Pulmonary Fibrosis,idiopathic pulmonary fibrosis,mesh-list
+1233323808,NCT00483119,Pemphigus,pemphigus,mesh-list
+1233323883,NCT01119118,Prostatic Neoplasms,prostatic neoplasms,mesh-list
+1233323884,NCT01119118,Neoplasm Metastasis,neoplasm metastasis,mesh-list
+1233324023,NCT05657457,Ischemic Stroke,ischemic stroke,mesh-list
+1233324084,NCT01340794,Neuroendocrine Tumors,neuroendocrine tumors,mesh-ancestor
+1233324085,NCT01340794,Neuroectodermal Tumors,neuroectodermal tumors,mesh-ancestor
+1233324086,NCT01340794,"Neoplasms, Germ Cell and Embryonal","neoplasms, germ cell and embryonal",mesh-ancestor
+1233324087,NCT01340794,Neoplasms by Histologic Type,neoplasms by histologic type,mesh-ancestor
+1233324088,NCT01340794,Neoplasms,neoplasms,mesh-ancestor
+1233324089,NCT01340794,"Neoplasms, Nerve Tissue","neoplasms, nerve tissue",mesh-ancestor
+1233324189,NCT00511329,Arthritis,arthritis,mesh-ancestor
+1233324190,NCT00511329,Joint Diseases,joint diseases,mesh-ancestor
+1233324191,NCT00511329,Musculoskeletal Diseases,musculoskeletal diseases,mesh-ancestor
+1233324192,NCT00511329,Rheumatic Diseases,rheumatic diseases,mesh-ancestor
+1233324193,NCT00511329,Connective Tissue Diseases,connective tissue diseases,mesh-ancestor
+1233324194,NCT00511329,Skin and Connective Tissue Diseases,skin and connective tissue diseases,mesh-ancestor
+1233324195,NCT00511329,Autoimmune Diseases,autoimmune diseases,mesh-ancestor
+1233324196,NCT00511329,Immune System Diseases,immune system diseases,mesh-ancestor
+1233324197,NCT00511329,Inflammatory Bowel Diseases,inflammatory bowel diseases,mesh-ancestor
+1233324198,NCT00511329,Gastroenteritis,gastroenteritis,mesh-ancestor
+1233324199,NCT00511329,Gastrointestinal Diseases,gastrointestinal diseases,mesh-ancestor
+1233324200,NCT00511329,Digestive System Diseases,digestive system diseases,mesh-ancestor
+1233324201,NCT00511329,Intestinal Diseases,intestinal diseases,mesh-ancestor
+1233324202,NCT00511329,"Bone Diseases, Developmental","bone diseases, developmental",mesh-ancestor
+1233324203,NCT00511329,Bone Diseases,bone diseases,mesh-ancestor
+1233324204,NCT00511329,"Genetic Diseases, Inborn","genetic diseases, inborn",mesh-ancestor
+1233324205,NCT00511329,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities","congenital, hereditary, and neonatal diseases and abnormalities",mesh-ancestor
+1233324206,NCT00511329,Endocrine System Diseases,endocrine system diseases,mesh-ancestor
+1233324207,NCT00511329,Signs and Symptoms,signs and symptoms,mesh-ancestor
+1233324208,NCT00511329,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233324209,NCT00511329,Disease Attributes,disease attributes,mesh-ancestor
+1233324210,NCT00511329,Pathologic Processes,pathologic processes,mesh-ancestor
+1233324345,NCT05005000,Joint Diseases,joint diseases,mesh-ancestor
+1233324346,NCT05005000,Musculoskeletal Diseases,musculoskeletal diseases,mesh-ancestor
+1233325379,NCT03147040,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233325380,NCT03147040,Neoplasms,neoplasms,mesh-ancestor
+1233325381,NCT03147040,Breast Diseases,breast diseases,mesh-ancestor
+1233325382,NCT03147040,Skin Diseases,skin diseases,mesh-ancestor
+1233325383,NCT03147040,Skin and Connective Tissue Diseases,skin and connective tissue diseases,mesh-ancestor
+1233325384,NCT03147040,Neoplastic Processes,neoplastic processes,mesh-ancestor
+1233325385,NCT03147040,Pathologic Processes,pathologic processes,mesh-ancestor
+1233325386,NCT03147040,"Pathological Conditions, Signs and Symptoms","pathological conditions, signs and symptoms",mesh-ancestor
+1233325494,NCT06105008,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233325495,NCT06105008,Neoplasms,neoplasms,mesh-ancestor
+1233325496,NCT06105008,Breast Diseases,breast diseases,mesh-ancestor
+1233325497,NCT06105008,Skin Diseases,skin diseases,mesh-ancestor
+1233325498,NCT06105008,Skin and Connective Tissue Diseases,skin and connective tissue diseases,mesh-ancestor
+1233325806,NCT00210366,"Lymphoma, Non-Hodgkin","lymphoma, non-hodgkin",mesh-ancestor
+1233325807,NCT00210366,Lymphoma,lymphoma,mesh-ancestor
+1233325808,NCT00210366,Neoplasms by Histologic Type,neoplasms by histologic type,mesh-ancestor
+1233325809,NCT00210366,Neoplasms,neoplasms,mesh-ancestor
+1233325810,NCT00210366,Lymphoproliferative Disorders,lymphoproliferative disorders,mesh-ancestor
+1233325811,NCT00210366,Lymphatic Diseases,lymphatic diseases,mesh-ancestor
+1233325812,NCT00210366,Hemic and Lymphatic Diseases,hemic and lymphatic diseases,mesh-ancestor
+1233325813,NCT00210366,Immunoproliferative Disorders,immunoproliferative disorders,mesh-ancestor
+1233325814,NCT00210366,Immune System Diseases,immune system diseases,mesh-ancestor
+1233325871,NCT01886105,"Neoplasms, Bone Tissue","neoplasms, bone tissue",mesh-ancestor
+1233325872,NCT01886105,"Neoplasms, Connective Tissue","neoplasms, connective tissue",mesh-ancestor
+1233325873,NCT01886105,"Neoplasms, Connective and Soft Tissue","neoplasms, connective and soft tissue",mesh-ancestor
+1233325874,NCT01886105,Neoplasms by Histologic Type,neoplasms by histologic type,mesh-ancestor
+1233325875,NCT01886105,Neoplasms,neoplasms,mesh-ancestor
+1233325876,NCT01886105,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233325877,NCT01886105,Bone Diseases,bone diseases,mesh-ancestor
+1233325878,NCT01886105,Musculoskeletal Diseases,musculoskeletal diseases,mesh-ancestor
+1233326132,NCT04784455,Thrombocytopenia,thrombocytopenia,mesh-ancestor
+1233326133,NCT04784455,Blood Platelet Disorders,blood platelet disorders,mesh-ancestor
+1233326134,NCT04784455,Hematologic Diseases,hematologic diseases,mesh-ancestor
+1233326135,NCT04784455,Hemic and Lymphatic Diseases,hemic and lymphatic diseases,mesh-ancestor
+1233326136,NCT04784455,Cytopenia,cytopenia,mesh-ancestor
+1233326887,NCT01340794,"Paraganglioma, Extra-Adrenal","paraganglioma, extra-adrenal",mesh-list
+1233326888,NCT01340794,Pheochromocytoma,pheochromocytoma,mesh-list
+1233326889,NCT01340794,Paraganglioma,paraganglioma,mesh-list
+1233326908,NCT00511329,"Arthritis, Juvenile","arthritis, juvenile",mesh-list
+1233326909,NCT00511329,Crohn Disease,crohn disease,mesh-list
+1233326910,NCT00511329,Dwarfism,dwarfism,mesh-list
+1233326911,NCT00511329,Failure to Thrive,failure to thrive,mesh-list
+1233326912,NCT00511329,Chronic Disease,chronic disease,mesh-list
+1233326950,NCT05005000,Arthritis,arthritis,mesh-list
+1233327194,NCT03147040,Breast Neoplasms,breast neoplasms,mesh-list
+1233327195,NCT03147040,Neoplasm Metastasis,neoplasm metastasis,mesh-list
+1233327227,NCT06105008,Breast Neoplasms,breast neoplasms,mesh-list
+1233327306,NCT00210366,"Lymphoma, B-Cell","lymphoma, b-cell",mesh-list
+1233327316,NCT01886105,Osteosarcoma,osteosarcoma,mesh-list
+1233327317,NCT01886105,Sarcoma,sarcoma,mesh-list
+1233327318,NCT01886105,Bone Neoplasms,bone neoplasms,mesh-list
+1233327374,NCT04784455,Thrombotic Microangiopathies,thrombotic microangiopathies,mesh-list
+1233328083,NCT00003452,Urologic Neoplasms,urologic neoplasms,mesh-ancestor
+1233328084,NCT00003452,Urogenital Neoplasms,urogenital neoplasms,mesh-ancestor
+1233328085,NCT00003452,Neoplasms by Site,neoplasms by site,mesh-ancestor
+1233328086,NCT00003452,Neoplasms,neoplasms,mesh-ancestor
+1233328087,NCT00003452,Female Urogenital Diseases,female urogenital diseases,mesh-ancestor
+1233328088,NCT00003452,Female Urogenital Diseases and Pregnancy Complications,female urogenital diseases and pregnancy complications,mesh-ancestor
+1233328089,NCT00003452,Urogenital Diseases,urogenital diseases,mesh-ancestor
+1233328090,NCT00003452,Urinary Bladder Diseases,urinary bladder diseases,mesh-ancestor
+1233328091,NCT00003452,Urologic Diseases,urologic diseases,mesh-ancestor
+1233328092,NCT00003452,Male Urogenital Diseases,male urogenital diseases,mesh-ancestor
+1233330609,NCT00003452,Urinary Bladder Neoplasms,urinary bladder neoplasms,mesh-list
+1233467790,NCT01829464,Glucose Metabolism Disorders,glucose metabolism disorders,mesh-ancestor
+1233467791,NCT01829464,Metabolic Diseases,metabolic diseases,mesh-ancestor
+1233467792,NCT01829464,Nutritional and Metabolic Diseases,nutritional and metabolic diseases,mesh-ancestor
+1233467793,NCT01829464,Endocrine System Diseases,endocrine system diseases,mesh-ancestor
+1233469132,NCT03432195,Dementia,dementia,mesh-ancestor
+1233469133,NCT03432195,Brain Diseases,brain diseases,mesh-ancestor
+1233469134,NCT03432195,Central Nervous System Diseases,central nervous system diseases,mesh-ancestor
+1233469135,NCT03432195,Nervous System Diseases,nervous system diseases,mesh-ancestor
+1233469136,NCT03432195,Tauopathies,tauopathies,mesh-ancestor
+1233469137,NCT03432195,Neurodegenerative Diseases,neurodegenerative diseases,mesh-ancestor
+1233469138,NCT03432195,Neurocognitive Disorders,neurocognitive disorders,mesh-ancestor
+1233469139,NCT03432195,Mental Disorders,mental disorders,mesh-ancestor
+1233470144,NCT01829464,Diabetes Mellitus,diabetes mellitus,mesh-list
+1233470478,NCT03432195,Alzheimer Disease,alzheimer disease,mesh-list

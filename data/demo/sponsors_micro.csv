@@ -1,0 +1,118 @@
+id,nct_id,agency_class,lead_or_collaborator,name
+290404383,NCT01829464,INDUSTRY,lead,Takeda
+290404622,NCT03432195,INDUSTRY,lead,"Corium, Inc."
+290005592,NCT00406419,INDUSTRY,collaborator,Roche Pharma AG
+290006056,NCT00406419,INDUSTRY,lead,"Genentech, Inc."
+290007490,NCT06536465,INDUSTRY,lead,Recursion Pharmaceuticals Inc.
+289818324,NCT01419795,NIH,collaborator,National Cancer Institute (NCI)
+289818624,NCT01419795,OTHER,lead,Fred Hutchinson Cancer Center
+289820185,NCT00313014,INDUSTRY,lead,Purdue Pharma LP
+289820318,NCT03532542,INDUSTRY,lead,"Sarepta Therapeutics, Inc."
+290371580,NCT02378870,INDUSTRY,lead,DexTech Medical AB
+290371976,NCT00630994,NIH,collaborator,National Cancer Institute (NCI)
+290371991,NCT04931147,INDUSTRY,collaborator,Simbec Research
+290371998,NCT05205109,INDUSTRY,collaborator,Merck Sharp & Dohme LLC
+290372007,NCT05772546,INDUSTRY,collaborator,Swedish Orphan Biovitrum
+290372018,NCT05916378,UNKNOWN,collaborator,The Latino Cancer Institute
+290372029,NCT05727267,OTHER,collaborator,German Center for Infection Research
+290372030,NCT05727267,UNKNOWN,collaborator,Medical Biometry and Epidemiology_- Universitätsklinikum Hamburg Eppendorf
+290372031,NCT05727267,INDUSTRY,collaborator,Helmholtz Zentrum München
+290372032,NCT05727267,OTHER,collaborator,The Fraunhofer-Gesellschaft
+290372033,NCT05727267,UNKNOWN,collaborator,Institute of Virology Helmholtz Zentrum München (HMGU)
+290372034,NCT05727267,OTHER,collaborator,LMU Klinikum
+290372035,NCT01169259,NIH,collaborator,National Cancer Institute (NCI)
+290372036,NCT01169259,NIH,collaborator,"National Heart, Lung, and Blood Institute (NHLBI)"
+290372037,NCT01169259,NIH,collaborator,Office of Dietary Supplements (ODS)
+290372038,NCT01169259,NIH,collaborator,National Institute of Neurological Disorders and Stroke (NINDS)
+290372039,NCT01169259,NIH,collaborator,National Center for Complementary and Integrative Health (NCCIH)
+290372040,NCT01169259,INDUSTRY,collaborator,Pharmavite LLC
+290372041,NCT01169259,INDUSTRY,collaborator,Pronova BioPharma
+290372042,NCT01169259,INDUSTRY,collaborator,BASF
+290372043,NCT05963217,INDUSTRY,collaborator,Takara Bio Inc.
+290372047,NCT05644756,NIH,collaborator,National Institute of Mental Health (NIMH)
+290372048,NCT05644756,OTHER,collaborator,Brown University
+290372049,NCT06839872,INDUSTRY,collaborator,Eli Lilly and Company
+290372050,NCT04663997,OTHER,collaborator,Prostate Cancer Canada
+290372051,NCT04663997,INDUSTRY,collaborator,Novartis Pharmaceuticals
+290372071,NCT00671645,INDUSTRY,collaborator,Hoffmann-La Roche
+290372102,NCT00323362,NIH,collaborator,National Cancer Institute (NCI)
+290372103,NCT00323362,INDUSTRY,collaborator,Novartis
+290372143,NCT04535518,OTHER,collaborator,Shanghai Children's Hospital
+290372144,NCT04535518,OTHER,collaborator,Shanghai Children's Medical Center
+290372145,NCT04535518,OTHER,collaborator,"Xinhua Hospital, Shanghai Jiao Tong University School of Medicine"
+290372146,NCT04535518,OTHER,collaborator,Shanghai 10th People's Hospital
+290372288,NCT01395342,OTHER,lead,"University of Campinas, Brazil"
+290372310,NCT00630994,OTHER,lead,Mayo Clinic
+290372318,NCT01855321,OTHER,lead,University of Florida
+290372326,NCT04931147,INDUSTRY,lead,Redx Pharma Ltd
+290372338,NCT05205109,INDUSTRY,lead,Antengene Therapeutics Limited
+290372343,NCT05772546,OTHER,lead,"Hanny Al-Samkari, MD"
+290372345,NCT04957914,INDUSTRY,lead,Eli Lilly and Company
+290372359,NCT03891732,OTHER,lead,Chinese University of Hong Kong
+290372365,NCT05916378,OTHER,lead,Stanford University
+290372374,NCT05727267,OTHER,lead,Universitätsklinikum Hamburg-Eppendorf
+290372375,NCT01169259,OTHER,lead,Brigham and Women's Hospital
+290372380,NCT05963217,OTHER,lead,"University Health Network, Toronto"
+290372383,NCT05993299,INDUSTRY,lead,Adaptimmune
+290372384,NCT05644756,OTHER,lead,Kaiser Permanente
+290372386,NCT06020378,OTHER,lead,RenJi Hospital
+290372387,NCT04638439,INDUSTRY,lead,PharmaEssentia
+290372391,NCT06839872,INDUSTRY,lead,AstraZeneca
+290372393,NCT04663997,NETWORK,lead,Canadian Cancer Trials Group
+290372404,NCT04238624,OTHER,lead,Memorial Sloan Kettering Cancer Center
+290372406,NCT06297642,INDUSTRY,lead,"Chia Tai Tianqing Pharmaceutical Group Co., Ltd."
+290372417,NCT05981365,INDUSTRY,lead,Pfizer
+290372452,NCT00671645,NETWORK,lead,Austrian Breast & Colorectal Cancer Study Group
+290372458,NCT00261352,INDUSTRY,lead,AstraZeneca
+290372467,NCT00401310,INDUSTRY,lead,Merck Sharp & Dohme LLC
+290372478,NCT04909879,INDUSTRY,lead,"Sorrento Therapeutics, Inc."
+290372488,NCT00320801,INDUSTRY,lead,Purdue Pharma LP
+290372519,NCT00323362,OTHER,lead,"Rutgers, The State University of New Jersey"
+290372554,NCT05790200,OTHER,lead,"Union Hospital, Tongji Medical College, Huazhong University of Science and Technology"
+290372594,NCT04535518,OTHER,lead,Children's Hospital of Fudan University
+290372704,NCT04479358,OTHER,lead,University of Chicago
+290372708,NCT05798611,INDUSTRY,lead,Artios Pharma Ltd
+290372716,NCT06011577,INDUSTRY,lead,Levomecor Inc.
+290372734,NCT05493683,OTHER,lead,The First Affiliated Hospital with Nanjing Medical University
+290372800,NCT04895046,OTHER,collaborator,Emory University
+290372801,NCT04895046,INDUSTRY,collaborator,GlaxoSmithKline
+290372823,NCT04465916,INDUSTRY,collaborator,Novotech (Australia) Pty Limited
+290372824,NCT04465916,INDUSTRY,collaborator,"Synteract, Inc."
+290372825,NCT04465916,INDUSTRY,collaborator,Eurofins
+290372826,NCT04465916,INDUSTRY,collaborator,Parexel
+290372842,NCT01408056,OTHER,collaborator,Society for Pediatric Dermatology
+290372902,NCT00544778,NIH,collaborator,National Cancer Institute (NCI)
+290372914,NCT03112720,OTHER,collaborator,New Jersey Medical School
+290373013,NCT04190056,INDUSTRY,collaborator,Merck Sharp & Dohme LLC
+290373025,NCT01119118,INDUSTRY,collaborator,AstraZeneca
+290373087,NCT05657457,UNKNOWN,collaborator,Cerebrovascular Disease Collaboration & Innovation Alliance of Liaoning
+290373126,NCT04895046,OTHER,lead,"Walid Shaib, MD"
+290373141,NCT00470249,OTHER,lead,University of Southampton
+290373179,NCT04465916,INDUSTRY,lead,Enyo Pharma
+290373194,NCT00265863,OTHER,lead,"Masonic Cancer Center, University of Minnesota"
+290373206,NCT01408056,OTHER,lead,Children's Hospital of Philadelphia
+290373281,NCT00544778,OTHER,lead,City of Hope Medical Center
+290373293,NCT05005468,OTHER,lead,Shanghai Chest Hospital
+290373301,NCT03112720,OTHER,lead,"Rutgers, The State University of New Jersey"
+290373375,NCT00517868,INDUSTRY,lead,Urigen
+290373387,NCT05349760,INDUSTRY,lead,"AmMax Bio, Inc."
+290373435,NCT00483119,OTHER,lead,NYU Langone Health
+290373461,NCT04190056,OTHER,lead,"University of California, San Francisco"
+290373482,NCT01119118,OTHER,lead,"University of Wisconsin, Madison"
+290373580,NCT05657457,OTHER,lead,General Hospital of Shenyang Military Region
+290373613,NCT00511329,INDUSTRY,collaborator,Pfizer
+290373724,NCT03147040,INDUSTRY,collaborator,Roche Pharma AG
+290373780,NCT01886105,NIH,collaborator,National Cancer Institute (NCI)
+290373781,NCT01886105,INDUSTRY,collaborator,Jazz Pharmaceuticals
+290373874,NCT01340794,NIH,lead,National Cancer Institute (NCI)
+290373894,NCT00511329,OTHER,lead,Nationwide Children's Hospital
+290373922,NCT05005000,OTHER,lead,NYU Langone Health
+290374104,NCT03147040,OTHER,lead,The Netherlands Cancer Institute
+290374122,NCT06105008,INDUSTRY,lead,"RemeGen Co., Ltd."
+290374182,NCT00210366,OTHER,lead,International Extranodal Lymphoma Study Group (IELSG)
+290374192,NCT01886105,OTHER,lead,Sidney Kimmel Comprehensive Cancer Center at Johns Hopkins
+290374230,NCT04784455,INDUSTRY,lead,AKARI Therapeutics
+290374242,NCT05495724,OTHER,lead,Tianjin Medical University Second Hospital
+290374382,NCT00313482,INDUSTRY,collaborator,Bayer
+290374667,NCT00313482,OTHER,lead,Veeda Oncology
+290374740,NCT00003452,OTHER,lead,Burzynski Research Institute

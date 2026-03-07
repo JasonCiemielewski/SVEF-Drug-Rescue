@@ -70,15 +70,15 @@ def apply_unified_svef_logic(df):
     
     # Efficacy Keywords
     eff_keywords = ['futility', 'efficacy', 'lack of effect', 'benefit', 'endpoint', 'superiority', 'insufficient signal']
-    eff_pattern = r'\b(' + '|'.join(eff_keywords) + r')\b'
+    eff_pattern = r'\b(?:' + '|'.join(eff_keywords) + r')\b'
     
     # Safety Keywords
     safe_keywords = ['toxic', 'adverse event', 'side effect', 'harm', 'risk', 'death', 'mortality', 'aes', 'safety']
-    safe_pattern = r'\b(' + '|'.join(safe_keywords) + r')\b'
+    safe_pattern = r'\b(?:' + '|'.join(safe_keywords) + r')\b'
     
     # Logistical Keywords (Specific to Withdrawn/Suspended)
     log_keywords = ['recruitment', 'accrual', 'enrollment', 'funding', 'covid', 'personnel', 'feasibility', 'operational']
-    log_pattern = r'\b(' + '|'.join(log_keywords) + r')\b'
+    log_pattern = r'\b(?:' + '|'.join(log_keywords) + r')\b'
 
     # Negation Phrases (e.g., "not for safety or efficacy")
     negation_phrases = [
@@ -89,7 +89,7 @@ def apply_unified_svef_logic(df):
         'not due to any efficacy or safety', 'not due to efficacy or safety',
         'not for reasons of efficacy or safety'
     ]
-    negation_pattern = r'\b(' + '|'.join(negation_phrases) + r')\b'
+    negation_pattern = r'\b(?:' + '|'.join(negation_phrases) + r')\b'
 
     # --- Masking ---
     
@@ -188,7 +188,7 @@ def main():
     
     # 5. Save Outputs
     audit_trace.to_csv(os.path.join(audit_dir, 'svef_logic_audit.csv'), index=False)
-    svef_candidates.to_csv(os.path.join(output_dir, 'SVEF_candidates.csv'), index=False)
+    svef_candidates.to_csv(os.path.join('data', 'interim', 'SVEF_candidates.csv'), index=False)
     
     # 6. Summary Stats
     print("\n--- Unified Pipeline Summary ---")
@@ -196,7 +196,7 @@ def main():
     print(f"Total SVEF Candidates: {len(svef_candidates)}")
     print("\nStatus Breakdown of Candidates:")
     print(svef_candidates['audit_status'].value_counts().to_string())
-    print(f"\nFinal output saved to: {os.path.join(output_dir, 'SVEF_candidates.csv')}")
+    print(f"\nFinal output saved to: {os.path.join('data', 'interim', 'SVEF_candidates.csv')}")
 
 if __name__ == "__main__":
     main()
