@@ -19,12 +19,20 @@ data/interim/
 data/processed/
 !data/demo/
 
-# Reports & Docs
+# Reports, Notebooks & Docs
 # Keep the directory but ignore generated assets
 docs/*_files/
 docs/*.html
-# Keep figures for now as some are already tracked
-# reports/figures/*.png
+
+# Ignore all figures by default
+reports/figures/*.png
+notebooks/*.png
+
+# Ignore notebooks by default, then whitelist specific ones
+notebooks/*.ipynb
+!notebooks/Midterm_Presentation.ipynb
+!notebooks/SVEF_Transparent_Bridge.ipynb
+!notebooks/EDA_Check_In_1.ipynb
 
 # Office/Temp files
 *.xlsx
