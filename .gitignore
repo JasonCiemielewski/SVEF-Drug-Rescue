@@ -24,11 +24,8 @@ data/processed/
 docs/*_files/
 docs/*.html
 
-# Ignore all figures by default
-reports/figures/*.png
+# Share figures in reports/figures/ but ignore those in archived/
 notebooks/*.png
-
-# Archived figures (keep directory but ignore contents)
 reports/figures/archived/*
 !reports/figures/archived/.gitkeep
 
