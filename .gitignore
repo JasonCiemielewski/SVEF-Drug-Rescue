@@ -18,6 +18,7 @@ data/raw/
 data/interim/
 data/processed/
 !data/demo/
+!data/interim/audit/svef_logic_audit.csv
 
 # Reports, Notebooks & Docs
 # Keep the directory but ignore generated assets
