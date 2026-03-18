@@ -24,7 +24,8 @@ data/processed/
 docs/*_files/
 docs/*.html
 
-# Share figures in reports/figures/ but ignore those in archived/
+# Share figures in reports/figures/
+# Do not share archived figures or notebook figures
 notebooks/*.png
 reports/figures/archived/*
 !reports/figures/archived/.gitkeep
