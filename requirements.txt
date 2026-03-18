@@ -11,3 +11,6 @@ urllib3==2.6.3
 matplotlib
 seaborn
 pyarrow
+matplotlib-venn
+highlight-text
+pytest
