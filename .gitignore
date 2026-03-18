@@ -28,6 +28,10 @@ docs/*.html
 reports/figures/*.png
 notebooks/*.png
 
+# Archived figures (keep directory but ignore contents)
+reports/figures/archived/*
+!reports/figures/archived/.gitkeep
+
 # Ignore notebooks by default, then whitelist specific ones
 notebooks/*.ipynb
 !notebooks/Midterm_Presentation.ipynb
