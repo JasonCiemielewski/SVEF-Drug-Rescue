@@ -9,7 +9,6 @@ from datetime import datetime
 
 def load_data(base_df_path, raw_dir):
     """
-    Bioinformatics Systems Architect Upgrade:
     Ingests relational design tables with strict string-casting for join integrity.
     """
     print(f"Loading base dataset: {base_df_path}")
@@ -101,7 +100,9 @@ def query_pubchem(identifier, namespace='name'):
 
 def clean_drug_name(drug_name):
     raw_name = str(drug_name)
-    clean = re.sub(r'\[.*?\]', '', raw_name)
+    # Strip clinical trial prefixes
+    clean = re.sub(r'^(?:comparator|arm|group|active|placebo|sham|standard of care|vehicle|regimen)\s*[:\-]\s*', '', raw_name, flags=re.IGNORECASE)
+    clean = re.sub(r'\[.*?\]', '', clean)
     clean = re.sub(r'\(.*?\)', '', clean)
     clean = clean.split(',')[0].split(';')[0].strip()
     dose_pattern = r'\b(\d+ ?mg|\d+ ?g|\d+ ?mcg|\d+ ?u/kg|iv|intravenous|oral|tablets?|capsules?|active drug|matching|hydrochloride|sodium|salt|ointment|gel|solution|capsule|product|treatment|arm|preceding|study|phase|forming|phosphate|besylate|acetate|fumarate|maleate|succinate|tartrate|citrate)\b'
@@ -109,7 +110,7 @@ def clean_drug_name(drug_name):
     clean = re.sub(r'\d*\.?\d*%', '', clean).strip()
     clean = re.sub(r'\s+\d+\.?\d*$', '', clean).strip()
     clean = re.sub(r'\s+', ' ', clean).strip()
-    clean = re.sub(r'^[^a-zA-Z0-0]+|[^a-zA-Z0-0]+$', '', clean).strip()
+    clean = re.sub(r'^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$', '', clean).strip()
     if len(clean) < 2: clean = raw_name.split(',')[0].strip()
     return clean
 
@@ -195,7 +196,16 @@ def enrich_with_pubchem_architect(df, cache_path=None):
     # NEW: Classify reasons for remaining failures
     results_df.loc[results_df['matched_by'] == 'Failed', 'failure_reason'] = results_df[results_df['matched_by'] == 'Failed']['name'].apply(classify_failure)
     
-    df = df.merge(results_df, on='name', how='left', suffixes=('', '_pc'))
+    # CASE-INSENSITIVE MERGE: Normalize names for joining
+    df['name_norm'] = df['name'].astype(str).str.lower().str.strip()
+    results_df['name_norm'] = results_df['name'].astype(str).str.lower().str.strip()
+    
+    # Drop the original 'name' from results_df to avoid suffix confusion, keeping the one from df
+    results_df = results_df.drop(columns=['name'])
+    
+    df = df.merge(results_df, on='name_norm', how='left')
+    df = df.drop(columns=['name_norm'])
+    
     df['is_dti_ready'] = df['smiles'].notnull()
     df['is_lipinski_compliant'] = (df['molecular_weight'] < 500) & (df['logp'] < 5)
     return df

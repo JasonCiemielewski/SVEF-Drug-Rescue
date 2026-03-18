@@ -3,20 +3,20 @@ dacogen,Dacogen,451668.0,C1[C@@H]([C@H](O[C@H]1N2C=NC(=NC2=O)N)CO)O,228.21,-1.2,
 pirtobrutinib,Pirtobrutinib,129269915.0,C[C@@H](C(F)(F)F)N1C(=C(C(=N1)C2=CC=C(C=C2)CNC(=O)C3=C(C=CC(=C3)F)OC)C(=O)N)N,479.4,3.3,Name
 acalabrutinib,Acalabrutinib,71226662.0,CC#CC(=O)N1CCC[C@H]1C2=NC(=C3N2C=CN=C3N)C4=CC=C(C=C4)C(=O)NC5=CC=CC=N5,465.5,3.0,Name
 placebo,Placebo,,,,,Failed
-tak-875,TAK-875,,,,,Failed
+tak-875,TAK-875,24857286.0,CC1=CC(=CC(=C1C2=CC=CC(=C2)COC3=CC4=C(C=C3)[C@@H](CO4)CC(=O)O)C)OCCCS(=O)(=O)C,524.6,4.7,Name
 tesaglitazar,Tesaglitazar,208901.0,CCO[C@@H](CC1=CC=C(C=C1)OCCC2=CC=C(C=C2)OS(=O)(=O)C)C(=O)O,408.5,3.5,Name
 metformin,Metformin,4091.0,CN(C)C(=N)N=C(N)N,129.16,-1.3,Name
 fenofibrate,Fenofibrate,3339.0,CC(C)OC(=O)C(C)(C)OC1=CC=C(C=C1)C(=O)C2=CC=C(C=C2)Cl,360.8,5.2,Name
 comparator: placebo,Comparator: Placebo,,,,,Failed
-comparator: mk0724,Comparator: MK0724,,,,,Failed
+comparator: mk0724,Comparator: MK0724,208925.0,CCCCCC[C@@H](CCC)C(=O)O,186.29,3.7,Name
 buprenorphine transdermal patch,Buprenorphine transdermal patch,,,,,Failed
-gemcitabine hydrochloride,Gemcitabine Hydrochloride,60750.0,C1=CN(C(=O)N=C1N)[C@H]2C([C@@H]([C@H](O2)CO)O)(F)F,263.20,-1.5,Name
+gemcitabine hydrochloride,Gemcitabine Hydrochloride,60750.0,C1=CN(C(=O)N=C1N)[C@H]2C([C@@H]([C@H](O2)CO)O)(F)F,263.2,-1.5,Name
 imatinib mesylate,imatinib mesylate,123596.0,CC1=C(C=C(C=C1)NC(=O)C2=CC=C(C=C2)CN3CCN(CC3)C)NC4=NC=CC(=N4)C5=CN=CC=C5.CS(=O)(=O)O,589.7,,Name
 ivig,IVIG,,,,,Failed
 aspirin,Aspirin,2244.0,CC(=O)OC1=CC=CC=C1C(=O)O,180.16,1.2,Name
 lenalidomide,lenalidomide,216326.0,C1CC(=O)NC(=O)C1N2CC3=C(C2=O)C=CC=C3N,259.26,-0.5,Name
 art0380,ART0380,145766632.0,C[C@@H]1COCCN1C2=NC(=NC(=C2)N=[S@](=O)(C)C3CC3)C4=CC(=NC=C4)N,388.5,1.9,Name
-rel-1017,REL-1017,,,,,Failed
+rel-1017,REL-1017,643985.0,CCC(=O)C(C[C@H](C)N(C)C)(C1=CC=CC=C1)C2=CC=CC=C2,309.4,3.9,Name
 niraparib,Niraparib,24958200.0,C1C[C@H](CNC1)C2=CC=C(C=C2)N3C=C4C=CC=C(C4=N3)C(=O)N,320.4,2.2,Name
 carboplatin,Carboplatin,10339178.0,C1CC(C1)(C(=O)[O-])C(=O)[O-].N.N.[Pt+2],371.25,,Name
 eyp001a,EYP001a,,,,,Failed
@@ -35,7 +35,7 @@ intravenous immunoglobulin,intravenous immunoglobulin,,,,,Failed
 cyclophosphamide,cyclophosphamide,2907.0,C1CNP(=O)(OC1)N(CCCl)CCCl,261.08,0.6,Name
 tamoxifen,Tamoxifen,2733526.0,CC/C(=C(\C1=CC=CC=C1)/C2=CC=C(C=C2)OCCN(C)C)/C3=CC=CC=C3,371.5,7.1,Name
 vorinostat,Vorinostat,5311.0,C1=CC=C(C=C1)NC(=O)CCCCCCC(=O)NO,264.32,1.9,Name
-zd4054,ZD4054,,,,,Failed
+zd4054,ZD4054,9910224.0,CC1=CN=C(C(=N1)OC)NS(=O)(=O)C2=C(N=CC=C2)C3=CC=C(C=C3)C4=NN=CO4,424.4,1.4,Name
 osteodex,Osteodex,,,,,Failed
 tenecteplase,Tenecteplase,,,,,Failed
 pazopanib hydrochloride,Pazopanib Hydrochloride,10113978.0,CC1=C(C=C(C=C1)NC2=NC=CC(=N2)N(C)C3=CC4=NN(C(=C4C=C3)C)C)S(=O)(=O)N,437.5,3.1,Name
@@ -53,4 +53,4 @@ oxycodone immediate-release,Oxycodone Immediate-Release,,,,,Failed
 methotrexate,Methotrexate,126941.0,CN(CC1=CN=C2C(=N1)C(=NC(=N2)N)N)C3=CC=C(C=C3)C(=O)N[C@@H](CCC(=O)O)C(=O)O,454.4,-1.8,Name
 casimersen,Casimersen,,,,,Failed
 golodirsen,Golodirsen,,,,,Failed
-rec-3964,REC-3964,25058126.0,C=C1CS[C@@H](N=C1C(=O)O)[C@@H](C(=O)O)NC(=O)CCCC[C@H](C(=O)O)N,387.4,-3.1,Name
+rec-3964,REC-3964,,,,,Failed
