@@ -32,7 +32,6 @@ notebooks/*.png
 notebooks/*.ipynb
 !notebooks/Midterm_Presentation.ipynb
 !notebooks/SVEF_Transparent_Bridge.ipynb
-!notebooks/EDA_Check_In_1.ipynb
 
 # Office/Temp files
 *.xlsx
