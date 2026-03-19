@@ -14,9 +14,9 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Data (Ignore all except demo data)
-data/raw/
-data/interim/
-data/processed/
+data/raw/*
+data/interim/*
+data/processed/*
 !data/processed/SVEF_Enriched_Final.csv
 !data/demo/
 !data/interim/audit/svef_logic_audit.csv
