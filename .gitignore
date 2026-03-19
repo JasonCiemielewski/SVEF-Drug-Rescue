@@ -17,6 +17,7 @@ __pycache__/
 data/raw/
 data/interim/
 data/processed/
+!data/processed/SVEF_Enriched_Final.csv
 !data/demo/
 !data/interim/audit/svef_logic_audit.csv
 
