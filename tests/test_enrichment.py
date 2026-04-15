@@ -1,7 +1,41 @@
 import pandas as pd
 import pytest
 import re
-from src.features.enrich_dataset import process_publications, get_pubchem_data
+import sys
+import os
+
+# Ensure the src directory is in the path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from src.features.enrich_dataset import process_publications, get_pubchem_data_tiered, clean_drug_name, classify_failure
+
+def test_clean_drug_name():
+    """Test drug name normalization for PubChem recovery."""
+    # Salt and dose removal
+    assert clean_drug_name("Imatinib Mesylate 100mg Tablet") == "Imatinib"
+    assert clean_drug_name("Metformin Hydrochloride 500 mg") == "Metformin"
+    
+    # Prefix removal
+    assert clean_drug_name("Active: Sildenafil citrate") == "Sildenafil"
+    assert clean_drug_name("Arm 1: Placebo") == ""
+    assert clean_drug_name("Comparator: Warfarin sodium") == "Warfarin"
+    
+    # Parentheses and brackets removal
+    assert clean_drug_name("DrugName (Code-123)") == "DrugName"
+    assert clean_drug_name("DrugName [Phase II]") == "DrugName"
+    
+    # Edge case - only doses
+    assert clean_drug_name("10mg Tablet") == ""
+
+def test_classify_failure():
+    """Test failure reason categorization."""
+    assert classify_failure("Placebo") == "PLACEBO_EQUIVALENT"
+    assert classify_failure("Sham control") == "PLACEBO_EQUIVALENT"
+    assert classify_failure("Treatment Regimen") == "LOGISTICAL_GENERIC"
+    assert classify_failure("AZD-1234") == "POSSIBLE_INTERNAL_PROPRIETARY"
+    assert classify_failure("MK-0873") == "POSSIBLE_INTERNAL_PROPRIETARY"
+    assert classify_failure("123456") == "POSSIBLE_INTERNAL_PROPRIETARY"
+    assert classify_failure("Unknown Molecule X") == "UNKNOWN_NOMENCLATURE"
 
 def test_process_publications_doi_extraction_robust():
     """

@@ -3,11 +3,11 @@
 ## 1. Overview
 The **Safety-Validated/Efficacy-Failed (SVEF)** project identifies "stranded" drug assets from ClinicalTrials.gov (AACT). These molecules have successfully navigated Phase 1 safety hurdles but were halted in Phases 2 or 3 for reasons other than safety (e.g., lack of efficacy or strategic pivots).
 
-This pipeline utilizes a **Total Evidence Model**, preserving every drug arm in a clinical trial to provide full interaction context for downstream Deep Learning models like **ICANN**.
+This pipeline utilizes a **Total Evidence Model**, preserving every drug arm in a clinical trial (~20,000+ candidate trials) to provide full interaction context for downstream Deep Learning models like **ICANN**.
 
 ## 2. Key Features
-*   **Total Evidence Architecture:** Preserves all drugs listed in a trial (Experimental, Placebo, Comparator) and tags them with their clinical role (`group_type`).
-*   **Architect-Grade Hardening:** Implements robust API retry logic (exponential backoff), atomic cache writing to prevent data corruption, and strict relational join integrity.
+*   **Total Evidence Architecture:** Preserves all drugs listed in a trial (Experimental, Placebo, Comparator) and tags them with their clinical role (`group_type`), processing a broad candidate pool of 20,000+ trials.
+*   **Architect-Grade Hardening:** Implements robust API retry logic (exponential backoff), atomic cache writing to prevent data corruption, and strict relational join integrity (resolving column collisions).
 *   **Bioinformatics Recovery:** Utilizes a 3-tiered fallback system (Name -> CAS Registry -> Synonyms) to maximize SMILES recovery from PubChem.
 *   **Signality Tracking:** Categorizes trial halts into scientific failures (`EFFICACY_FAILURE`), strategic pivots (`CLEAN_EXIT`), or logistical withdrawals.
 *   **Asset Rescue Leads:** Automatically isolates proprietary internal codes (e.g., AZD-XXXX) into a separate "Rescue Leads" dataset for future research.
@@ -15,7 +15,7 @@ This pipeline utilizes a **Total Evidence Model**, preserving every drug arm in 
 ## 3. Installation & Setup
 1.  **Environment:** Python 3.12+ (Virtual environment recommended).
 2.  **Dependencies:** `pip install -r requirements.txt`.
-3.  **Tests:** Verify the logic by running `pytest tests/bioinformatics_audit/`.
+3.  **Tests:** Verify the logic by running `pytest tests/`.
 
 ## 4. Pipeline Execution
 The pipeline is managed through `main.py` with modular flags for specific auditing, refinement, and enrichment tasks.

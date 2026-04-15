@@ -1,65 +1,38 @@
 import pandas as pd
-import requests
-import time
 import os
-import re
 import sys
 import shutil
 from datetime import datetime
 
-def get_pubchem_data(identifier, id_type='name'):
-    """
-    Tiered Lookup on PubChem PUG-REST API.
-    """
-    if not identifier or str(identifier).lower() in ['nan', 'placebo', 'active drug']:
-        return None, None, None, None
-    
-    # Cleaning for API
-    clean_id = str(identifier).split(',')[0].strip()
-    if id_type == 'name':
-        clean_id = re.sub(r'\b(iv|intravenous|oral|tablets|capsules|active drug|matching)\b', '', clean_id, flags=re.IGNORECASE).strip()
-        # Handle combinations (take first)
-        for separator in ['+', '/', ' and ', ' with ']:
-            if separator in clean_id.lower():
-                clean_id = clean_id.lower().split(separator)[0].strip()
-                break
-    
-    base_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/{id_type}/{clean_id}/property/IsomericSMILES,ConnectivitySMILES,MolecularWeight,XLogP/JSON"
-    
-    try:
-        response = requests.get(base_url, timeout=10)
-        if response.status_code == 200:
-            data = response.json()
-            props = data['PropertyTable']['Properties'][0]
-            smiles = props.get('IsomericSMILES') or props.get('ConnectivitySMILES')
-            return props.get('CID'), smiles, props.get('MolecularWeight'), props.get('XLogP')
-    except Exception:
-        pass
-    return None, None, None, None
+# Add the project root to sys.path to allow importing from src
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-def get_synonyms(drug_name):
-    """
-    Fetch synonyms for a drug name from PubChem.
-    """
-    clean_name = str(drug_name).split(',')[0].strip()
-    url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/{clean_name}/synonyms/JSON"
-    try:
-        response = requests.get(url, timeout=10)
-        if response.status_code == 200:
-            return response.json()['InformationList']['Information'][0].get('Synonym', [])[:3]
-    except Exception:
-        pass
-    return []
+from src.features.enrich_dataset import (
+    enrich_with_pubchem_architect,
+    load_data,
+    map_intervention_roles,
+    merge_clinical_metadata,
+    feature_engineering_advanced,
+    process_publications
+)
 
 def recover_smiles(processed_dir):
     """
-    Module 3: Tiered Chemical Enrichment
-    """
-    print("Module 3: Starting Tiered Chemical Enrichment...")
+    Module 3: Tiered Chemical Enrichment (Total Evidence Edition).
+    Orchestrates the full enrichment workflow: loading raw data, joining metadata,
+    and performing tiered SMILES recovery for the broad candidate list.
     
-    input_path = os.path.join(processed_dir, 'SVEF_candidates_raw.csv')
+    Args:
+        processed_dir (str): Path to the directory where processed files are saved.
+    """
+    print("Module 3: Starting Tiered Chemical Enrichment (Multi-SMILES Architecture)...")
+    
+    # EXPLICITLY USE BROAD CANDIDATES
+    input_path = os.path.join(os.path.dirname(processed_dir), 'interim', 'SVEF_candidates.csv')
+    raw_dir = 'data/raw'
     main_output_path = os.path.join(processed_dir, 'SVEF_Enriched_Final.csv')
     archive_dir = os.path.join(processed_dir, 'archive')
+    cache_path = os.path.join(processed_dir, 'smiles_cache.csv')
     
     if not os.path.exists(archive_dir):
         os.makedirs(archive_dir)
@@ -73,88 +46,59 @@ def recover_smiles(processed_dir):
         shutil.move(main_output_path, archive_path)
     
     if not os.path.exists(input_path):
-        print(f"Error: {input_path} not found. Run Module 2 first.")
+        print(f"Error: {input_path} not found. Run Module 1 first.")
         return
     
-    df = pd.read_csv(input_path)
-    unique_drugs = df['name'].dropna().unique()
-    print(f"Total Unique Drug Names to Process: {len(unique_drugs):,}")
+    # 1. Full Clinical Metadata Enrichment (Total Evidence)
+    print(f"Loading base candidates for Total Evidence enrichment: {input_path}")
+    base_df, studies, calc_vals, sponsors, conditions, refs, dg, dg_int = load_data(input_path, raw_dir)
     
-    # Checkpoint logic
-    checkpoint_path = os.path.join(processed_dir, 'smiles_cache.csv')
-    if os.path.exists(checkpoint_path):
-        cache_df = pd.read_csv(checkpoint_path)
-        cache = cache_df.set_index('name').to_dict('index')
-        print(f"Loaded {len(cache):,} results from checkpoint cache.")
-    else:
-        cache = {}
-
-    processed_count = 0
-    for drug in unique_drugs:
-        if drug in cache and pd.notnull(cache[drug].get('smiles')):
-            continue
-            
-        processed_count += 1
-        if processed_count % 10 == 0:
-            print(f"Processing drug {processed_count}/{len(unique_drugs)}...")
-            # Periodic save of cache
-            pd.DataFrame.from_dict(cache, orient='index').reset_index().rename(columns={'index': 'name'}).to_csv(checkpoint_path, index=False)
-            
-        # Tier 1: Direct Name Lookup
-        cid, smiles, mw, logp = get_pubchem_data(drug, 'name')
-        time.sleep(0.2)
-        
-        # Tier 2: CAS Regex if Tier 1 Fails
-        if not smiles:
-            # Search in name or look back at description if available
-            # We'll just try CAS in the name for now, or assume more robust logic if we had full description
-            cas_pattern = r'(\d{2,7}-\d{2}-\d)'
-            # Search in original name
-            match = re.search(cas_pattern, str(drug))
-            if match:
-                cas_number = match.group(1)
-                cid, smiles, mw, logp = get_pubchem_data(cas_number, 'name') # name lookup works for CAS in PubChem too
-                time.sleep(0.2)
-        
-        # Tier 3: Synonym Expansion
-        if not smiles:
-            synonyms = get_synonyms(drug)
-            time.sleep(0.2)
-            for syn in synonyms:
-                cid, smiles, mw, logp = get_pubchem_data(syn, 'name')
-                time.sleep(0.2)
-                if smiles: break
-        
-        cache[drug] = {
-            'pubchem_cid': cid,
-            'smiles': smiles,
-            'molecular_weight': mw,
-            'logp': logp,
-            'enrichment_tier': 'Tier 1' if cid and not smiles else ('Tier 2' if 'cas' in str(drug).lower() else 'Tier 3' if smiles else 'Failed')
-        }
-
-    # Final cache save
-    pd.DataFrame.from_dict(cache, orient='index').reset_index().rename(columns={'index': 'name'}).to_csv(checkpoint_path, index=False)
+    print("Executing clinical data joins and role mapping...")
+    df = map_intervention_roles(base_df, dg, dg_int)
+    df = merge_clinical_metadata(df, studies, calc_vals, sponsors, conditions)
+    df = feature_engineering_advanced(df)
     
-    # Merge back
-    cache_df = pd.DataFrame.from_dict(cache, orient='index').reset_index().rename(columns={'index': 'name'})
-    enriched_df = pd.merge(df, cache_df, on='name', how='left')
+    print("Processing publication evidence...")
+    pub_data = process_publications(refs)
+    if not pub_data.empty:
+        df = df.merge(pub_data, on='nct_id', how='left')
+    
+    # Ensure publication columns are filled
+    pub_cols = ['publication_count', 'Evidence_Confidence', 'results_pmid_list', 'background_pmid_list', 'doi_list']
+    for col in pub_cols:
+        if col not in df.columns:
+            df[col] = 0 if 'count' in col or 'Confidence' in col else ''
+        else:
+            df[col] = df[col].fillna(0) if 'count' in col or 'Confidence' in col else df[col].fillna('')
+
+    print(f"Total Rows for SMILES Recovery: {len(df):,}")
+
+    # 2. Bioinformatics Recovery Phase
+    # Use the architect-hardened enrichment engine
+    enriched_df = enrich_with_pubchem_architect(df, cache_path=cache_path)
     
     # Save Final Output
-    output_path = os.path.join(processed_dir, 'SVEF_Enriched_Final.csv')
-    enriched_df.to_csv(output_path, index=False)
+    print("Finalizing Hardened Total Evidence Dataset...")
+    enriched_df = enriched_df.drop_duplicates(subset=['nct_id', 'name'])
+    enriched_df.to_csv(main_output_path, index=False)
+    
+    # Export possible proprietary rescue leads
+    if 'failure_reason' in enriched_df.columns:
+        proprietary_leads = enriched_df[enriched_df['failure_reason'] == 'POSSIBLE_INTERNAL_PROPRIETARY'][['name', 'nct_id', 'group_type', 'agency_class']].drop_duplicates(subset=['name'])
+        rescue_path = os.path.join(processed_dir, 'Possible_Internal_Proprietary_Rescue_Leads.csv')
+        proprietary_leads.to_csv(rescue_path, index=False)
+        print(f"Proprietary rescue list saved to: {rescue_path}")
     
     # Summary Report
-    if 'smiles' in enriched_df.columns:
-        matches = enriched_df['smiles'].notnull().sum()
-        coverage = (matches / len(enriched_df)) * 100 if len(enriched_df) > 0 else 0
-    else:
-        matches = 0
-        coverage = 0
+    matches = enriched_df['smiles'].notnull().sum()
     print("\n--- Module 3 Summary ---")
+    print(f"Total Rows after SMILES Expansion: {len(enriched_df):,}")
     print(f"SMILES Recovery Matches: {matches:,}")
-    print(f"Final Coverage: {coverage:.1f}%")
-    print(f"Enriched dataset saved to: {output_path}")
+    print(f"Enriched dataset saved to: {main_output_path}")
+
+if __name__ == "__main__":
+    processed_dir = 'data/processed'
+    recover_smiles(processed_dir)
 
 if __name__ == "__main__":
     processed_dir = 'data/processed'

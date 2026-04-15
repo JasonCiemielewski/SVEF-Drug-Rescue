@@ -12,13 +12,13 @@ The pipeline is managed via `python main.py`.
 
 ### Step 1: Base Candidate Extraction & Auditing (`--audit`)
 **Module:** `src.audit.audit_engine.audit_global_trials`
-- **Action:** Filters ~570k trials for Phase 2/3 halted studies.
+- **Action:** Filters ~580k trials for Phase 2/3 halted studies.
 - **NLP Logic:** Identifies scientific vs. strategic reasons for termination.
-- **Output:** `data/interim/SVEF_candidates.csv`.
+- **Output:** `data/interim/SVEF_candidates.csv` (~25,000 trials).
 
 ### Step 2: Total Evidence Enrichment (Hardened) (`--refine` & `--enrich`)
 **Module:** `src.audit.svef_refinement.refine_svef_assets` & `src.audit.smiles_recovery.recover_smiles`
-- **Total Evidence Model:** Preserves every drug in the trial. Joins with trial design tables to identify if a drug was `EXPERIMENTAL` or a `PLACEBO`.
+- **Total Evidence Model:** Preserves every drug in the trial (~20,000+ candidate trials). Joins with trial design tables to identify if a drug was `EXPERIMENTAL` or a `PLACEBO`.
 - **Bioinformatics Recovery:**
     - **Tier 1:** Name lookup.
     - **Tier 2:** CAS Registry Number extraction from trial titles.
