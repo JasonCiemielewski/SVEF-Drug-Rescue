@@ -15,11 +15,15 @@ __pycache__/
 
 # Data (Ignore all except demo data)
 data/raw/*
+data/raw_first/
 data/interim/*
 data/processed/*
 !data/processed/SVEF_Enriched_Final.csv
 !data/demo/
 !data/interim/audit/svef_logic_audit.csv
+
+# Cache and temporary files
+nonexistent_cache.csv
 
 # Reports, Notebooks & Docs
 # Keep the directory but ignore generated assets
@@ -35,6 +39,7 @@ reports/figures/archived/*
 # Ignore notebooks by default, then whitelist specific ones
 notebooks/*.ipynb
 !notebooks/Midterm_Presentation.ipynb
+!notebooks/model_creation.ipynb
 !notebooks/SVEF_Transparent_Bridge.ipynb
 
 # Office/Temp files
