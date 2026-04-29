@@ -21,6 +21,7 @@ data/processed/*
 !data/processed/SVEF_Enriched_Final.csv
 !data/demo/
 !data/interim/audit/svef_logic_audit.csv
+!data/interim/master_ml_df_enriched.csv
 
 # Cache and temporary files
 nonexistent_cache.csv
@@ -42,6 +43,8 @@ notebooks/*.ipynb
 !notebooks/model_creation.ipynb
 !notebooks/SVEF_Transparent_Bridge.ipynb
 !notebooks/svef_dataset_creation.ipynb
+!notebooks/svef_dataset_creation 2.ipynb
+!notebooks/Random_Forest_Analysis.ipynb
 
 # Office/Temp files
 *.xlsx
