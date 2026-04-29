@@ -41,6 +41,7 @@ notebooks/*.ipynb
 !notebooks/Midterm_Presentation.ipynb
 !notebooks/model_creation.ipynb
 !notebooks/SVEF_Transparent_Bridge.ipynb
+!notebooks/svef_dataset_creation.ipynb
 
 # Office/Temp files
 *.xlsx
