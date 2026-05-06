@@ -60,6 +60,9 @@ tests/*.py
 !tests/test_enrichment.py
 !tests/test_v4_arm_cleaner.py
 
+# Whitelist results folder
+!results/
+
 # Office/Temp files
 *.xlsx
 *.pdf
