@@ -69,9 +69,7 @@ The AACT database flat text files can be found here: https://aact.ctti-clinicalt
 
 
 ## Summary of Findings
-The original production pipeline (v1.0), including its modular source code, tests, and documentation, has been archived for future reference and comparison.
-- **Location**: `legacy_pipeline/`
-- **Reference**: See `legacy_pipeline/README_v1.md` and `legacy_pipeline/PIPELINE_DETAILS.md` for details on the previous architecture.
+See Random_Forest_Analysis
 
 ---
 *BIFX546 Final Project*
