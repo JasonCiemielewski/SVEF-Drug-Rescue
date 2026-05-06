@@ -49,19 +49,21 @@ src/data/*.py
 src/features/*.py
 src/pipeline/*.py
 !src/data/clean_drug_name.py
-!src/v4_arm_cleaner.py
+!src/data/v4_arm_cleaner.py
 !src/features/cleaning.py
 !src/features/enrichment.py
 
 
 # Ignore tests by default, then whitelist specific ones
 tests/*.py
-!test_cleaning.py
-!test_enrichment.py
-!test_v4_arm_cleaner.py
+!tests/test_cleaning.py
+!tests/test_enrichment.py
+!tests/test_v4_arm_cleaner.py
 
 # Office/Temp files
 *.xlsx
 *.pdf
 ~$*
 script_*.py
+extract_nb.py
+full_notebook_code.py
