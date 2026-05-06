@@ -61,7 +61,7 @@ $$SAE \text{ Intensity} = \frac{\sum \text{Total SAE Occurrences}}{\sum \text{Su
 
 Mortality
 
-$$\text{Mortality Rate}_{\text{arm}} = \frac{\sum \text{Subjects Affected}_{(\text{event\_type} = \text{'deaths'})}}{\max(\text{Subjects at Risk}_{\text{arm}})}$$
+$$\text{Mortality Rate}_{\text{arm}} = \frac{\sum \text{Subjects Affected}_{(\text{event\_type} = \text{'deaths'})}}{\max(\text{Subjects at Risk}_{\text{arm}})}$$  
 
 Efficacy is being evaluated by examining the type of hypothesis test and results for the primary endpoint.  Currently, Superiority, Non-Inferiority, and Equivalence are compared with p_value for labeling of efficacy success or failure.  Confidence Intervals may also become included as time allows.
 
