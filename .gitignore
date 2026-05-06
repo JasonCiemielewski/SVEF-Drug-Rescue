@@ -44,6 +44,22 @@ notebooks/svef_dataset_creation.ipynb
 !notebooks/Random_Forest_Analysis.ipynb
 !notebooks/EDA_AACT.ipynb
 
+# Ignore src by default, then whitelist specific ones
+src/data/*.py
+src/features/*.py
+src/pipeline/*.py
+!src/data/clean_drug_name.py
+!src/v4_arm_cleaner.py
+!src/features/cleaning.py
+!src/features/enrichment.py
+
+
+# Ignore tests by default, then whitelist specific ones
+tests/*.py
+!test_cleaning.py
+!test_enrichment.py
+!test_v4_arm_cleaner.py
+
 # Office/Temp files
 *.xlsx
 *.pdf
