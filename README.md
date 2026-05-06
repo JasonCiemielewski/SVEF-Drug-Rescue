@@ -62,11 +62,6 @@ $$SAE \text{ Intensity} = \frac{\sum \text{Total SAE Occurrences}}{\sum \text{Su
 Mortality
 
 $$\text{Mortality Rate}_{\text{arm}} = \frac{\sum \text{Subjects Affected}_{(\text{event\_type} = \text{'deaths'})}}{\max(\text{Subjects at Risk}_{\text{arm}})}$$  
-
-Efficacy is being evaluated by examining the type of hypothesis test and results for the primary endpoint.  Currently, Superiority, Non-Inferiority, and Equivalence are compared with p_value for labeling of efficacy success or failure.  Confidence Intervals may also become included as time allows.
-
-Features from Version 1 will be reintroduced, such as lipophilicity, molecular weight, published literature evidence, and heuroistic regular expression mining in the near future.  Expectation is desired aspects of Version 1 architecure can be easily adapted for Version 2. Attempting to revise Version 1 architure to achieve unmeet needs were too time consuming.  A second fresh approach to gaining new/better features was needed.  Determination was made that fitting positive architechure aspects of Version 1 to Version 2 would be more beneficial and efficient than repeatedly modifying Version 1 to meet needs.
-
  
 
 ## Dataset Source
