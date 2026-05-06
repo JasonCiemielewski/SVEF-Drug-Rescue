@@ -40,7 +40,7 @@ reports/figures/archived/*
 # Ignore notebooks by default, then whitelist specific ones
 notebooks/*.ipynb
 !notebooks/Midterm_Presentation.ipynb
-!notebooks/svef_dataset_creation.ipynb
+notebooks/svef_dataset_creation.ipynb
 !notebooks/Random_Forest_Analysis.ipynb
 !notebooks/EDA_AACT.ipynb
 
